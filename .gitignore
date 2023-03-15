@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 wheels/
+models/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
@@ -105,6 +106,7 @@ celerybeat.pid
 .env
 .venv
 env/
+out/
 venv/
 ENV/
 env.bak/
