@@ -15,9 +15,9 @@ from src.processors import record_csv as record_processor
 from src.processors import config as config_processor
 # import tensorflow.compat.v2 as tf
 import tensorflow as tf
-from object_detection import model_lib_v2
-
-from transformers.model import Transformer
+# from object_detection import model_lib_v2
+from PIL import Image
+from src.transformers.model import Transformer
 
 OUT_PATH = "./out"
 
@@ -50,7 +50,7 @@ class Hive:
             "model": self.model,
             "dataset_type": self.ds_type,
             "dataset_path": self.ds_path,
-            "test_train_ratio": self.test_ratio,
+            "test_train_ratio": self.test_train_ratio,
         }
    
     def generate_labels_file(self) -> list:
@@ -118,9 +118,11 @@ class Hive:
             config["batch_size"],
         )
 
-    def make(self, out_dir: str):
-        self.fs.generate_dir(out_dir)
+    def make(self, transformers: list[Transformer], out_dir: str = None):
+        self.fs.generate_dir(out_dir or self.fs.dir, ds_type=self.ds_type, ds_path=self.ds_path)
         self.fs.create_config_file(self.get_config())
+        if transformers is not None and len(transformers) > 0:
+            self.apply_transformers(transformers)
         self.generate_csv_split()
         self.generate_records()
         self.fill_pipeline_config()
@@ -174,7 +176,14 @@ class Hive:
         print('Done!')
         return model_fn
 
-    def apply_transformer(self, transformer: Transformer):
+    def apply_transformers(self, transformers: list[Transformer]):
         images = self.fs.get_images()
+        paths = self.fs.get_paths()
+        
         for image in images:
-            transformer.transform(image)
+            img = Image.open(image)
+            for transformer in transformers:
+                img = transformer.transform(img)
+
+            img.save()
+        

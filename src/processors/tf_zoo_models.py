@@ -6,7 +6,7 @@ def download_model(model_name, path="out/models"):
     r = requests.get(model_url, allow_redirects=True)
     open(f"{path}/{model_name}.tar.gz", 'wb').write(r.content)
 
-def decompress_model(model_name, out_path="out/models"):
-    file = tarfile.open(f'out/models/{model_name}.tar.gz')
+def decompress_model(model_archive_path, out_path="out/models"):
+    file = tarfile.open(model_archive_path)
     file.extractall(out_path)
     file.close()

@@ -1,13 +1,13 @@
 import re
 import os
 import tensorflow as tf
-from google.protobuf import text_format
+# from google.protobuf import text_format
 
-from object_detection.utils import config_util
-from object_detection import exporter_lib_v2
-from object_detection.protos import pipeline_pb2
+# from object_detection.utils import config_util
+# from object_detection import exporter_lib_v2
+# from object_detection.protos import pipeline_pb2
 
-from utils.util import get_last_checkpoint_name
+from src.utils.util import get_last_checkpoint_name
 
 def update_config_values_regex(config_path, values):
     with open(config_path) as f:
