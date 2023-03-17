@@ -15,7 +15,7 @@ from src.processors import record_csv as record_processor
 from src.processors import config as config_processor
 # import tensorflow.compat.v2 as tf
 import tensorflow as tf
-# from object_detection import model_lib_v2
+from object_detection import model_lib_v2
 from PIL import Image
 from src.transformers.model import Transformer
 
@@ -179,11 +179,14 @@ class Hive:
     def apply_transformers(self, transformers: list[Transformer]):
         images = self.fs.get_images()
         paths = self.fs.get_paths()
-        
         for image in images:
             img = Image.open(image)
+            
             for transformer in transformers:
-                img = transformer.transform(img)
-
-            img.save()
+                results = transformer.transform(img)
+                img = results[0]
+            
+            img.save(
+                f"{paths['HIVE_DIR_IMAGES_TRANSFORMED']}/{os.path.basename(image)}"
+            )
         

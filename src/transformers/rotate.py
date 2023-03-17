@@ -1,9 +1,13 @@
-from transformers.model import Transformer
+from src.transformers.model import Transformer
 from PIL import Image, ImageOps
 
 class RotateTransformer(Transformer):
-    def transform(image_path: str):
-        im = Image.open(image_path)
-        im.rotate(45)
-        return im
+    def __init__(self, degree: int) -> None:
+        super().__init__()
+        self.degree = degree
+
+    degree: int = 0
+    def transform(self, image: Image.Image) -> list[Image.Image]:
+        result = image.rotate(self.degree)
+        return list([result])
     

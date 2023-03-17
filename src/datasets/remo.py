@@ -67,11 +67,11 @@ def crop_annotations(source_dir, target_dir, ann):
     for a in ann["annotations"]:
         box = a["bbox"]
         part = im.crop((box["xmin"], box["ymin"], box["xmax"], box["ymax"]))
-        for c in a["classes"]:
-            if os.path.isdir(f"{target_dir}/{c}") == False:
-                os.mkdir(f"{target_dir}/{c}")
-
-            part.save(f"{target_dir}/{c}/{name}_{i}.{ext}")
+        # for c in a["classes"]:
+            # if os.path.isdir(f"{target_dir}/{c}") == False:
+            #     os.mkdir(f"{target_dir}/{c}")
+            # part.save(f"{target_dir}/{c}/{name}_{i}.{ext}")
+        part.save(f"{target_dir}/{name}_{i}.{ext}")
             
         i += 1
 

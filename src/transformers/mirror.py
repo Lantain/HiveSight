@@ -1,8 +1,8 @@
-from transformers.model import Transformer
+from src.transformers.model import Transformer
 from PIL import Image, ImageOps
 
-class RotateTransformer(Transformer):
-    def transform(image: Image.Image):
+class MirrorTransformer(Transformer):
+    def transform(self, image: Image.Image) -> list[Image.Image]:
         transformed_image = ImageOps.mirror(image)
-        return transformed_image
+        return list([transformed_image])
     

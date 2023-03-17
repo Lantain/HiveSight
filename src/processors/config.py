@@ -1,11 +1,11 @@
 import re
 import os
 import tensorflow as tf
-# from google.protobuf import text_format
+from google.protobuf import text_format
 
-# from object_detection.utils import config_util
-# from object_detection import exporter_lib_v2
-# from object_detection.protos import pipeline_pb2
+from object_detection.utils import config_util
+from object_detection import exporter_lib_v2
+from object_detection.protos import pipeline_pb2
 
 from src.utils.util import get_last_checkpoint_name
 

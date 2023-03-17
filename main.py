@@ -6,6 +6,9 @@ import time
 
 from src.hive import Hive
 from src.hive_fs import HiveFs
+from src.transformers.greyscale import GreyscaleTransformer
+from src.transformers.rotate import RotateTransformer
+from src.transformers.grey_histogram_eq import GreyHistogramEqTransformer
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train a hive')
@@ -17,5 +20,8 @@ if __name__ == '__main__':
     hive = Hive(hive_fs)
     hive.set_train_params(10000, 32)
     hive.set_dataset("remo", "./source/remo")
-    hive.make(transformers=[])
-    
+    hive.make(transformers=[
+        # RotateTransformer(45), 
+        GreyscaleTransformer(), 
+        GreyHistogramEqTransformer()
+    ])
