@@ -53,7 +53,7 @@ class Hive:
             "test_train_ratio": self.test_train_ratio,
         }
    
-    def generate_labels_file(self, csv_path) -> list:
+    def generate_labels_file(self) -> list:
         paths = self.fs.get_paths()
         df = pd.read_csv(paths["HIVE_DIR_CSV"])
         labels = df["class"].unique().tolist()
