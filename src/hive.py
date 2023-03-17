@@ -135,7 +135,7 @@ class Hive:
         with strategy.scope():
             model_lib_v2.train_loop(
                 pipeline_config_path=paths["HIVE_DIR_PIPELINE"],
-                model_dir=paths["HIVE_MODEL_DIR"],
+                model_dir=paths["HIVE_DIR_TRAINED"],
                 train_steps=self.num_steps,
                 use_tpu=False,
                 checkpoint_every_n=1000,
