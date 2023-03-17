@@ -118,7 +118,7 @@ class HiveFs:
         model_processor.download_model(self.model, self.out)
         model_processor.decompress_model(
             f"{self.out}/{self.model}.tar.gz",
-            paths["HIVE_MODEL_DIR"]
+            paths["HIVE_DIR_PATH"]
         )
         # Move images
         shutil.copytree(
