@@ -1,9 +1,4 @@
 #!/bin/bash
-echo "Processing $1 path..."
-rm -rf $1/hivesight
-git clone https://github.com/Lantain/HiveSight.git hivesight
-cd hivesight
-
 echo "Removing models"
 rm -rf models
 mkdir out/
