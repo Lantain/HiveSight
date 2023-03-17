@@ -53,19 +53,19 @@ class Hive:
             "test_train_ratio": self.test_train_ratio,
         }
    
-    def generate_labels_file(self) -> list:
+    def generate_labels_file(self, csv_path) -> list:
         paths = self.fs.get_paths()
         df = pd.read_csv(paths["HIVE_DIR_CSV"])
         labels = df["class"].unique().tolist()
         self.fs.create_labels_file(labels=labels)
         return labels
 
-    def get_csv_split(self, labels: list):
+    def get_csv_split(self, labels: list, csv_path: str = None):
         config = self.fs.get_config_file()
         paths = self.fs.get_paths()
         test = list()
         train = list()
-        df = pd.read_csv(paths["HIVE_DIR_CSV"])
+        df = pd.read_csv(csv_path or paths["HIVE_DIR_CSV"])
         for label in labels:
             dft = df[df["class"] == label]
             df_train, df_test = train_test_split(dft, test_size=config["test_train_ratio"])
@@ -76,7 +76,10 @@ class Hive:
     def generate_csv_split(self):
         paths = self.fs.get_paths()
         labels = self.generate_labels_file()
-        train, test = self.get_csv_split(labels)
+        train, test = self.get_csv_split(
+            labels, 
+            paths["HIVE_DIR_TRANSFORMED_CSV"] if os.path.exists( paths["HIVE_DIR_TRANSFORMED_CSV"]) else paths["HIVE_DIR_CSV"]
+        )
 
         random.seed(0)
         random.shuffle(train)
@@ -119,10 +122,13 @@ class Hive:
         )
 
     def make(self, transformers: list[Transformer], out_dir: str = None):
+        paths = self.fs.get_paths()
         self.fs.generate_dir(out_dir or self.fs.dir, ds_type=self.ds_type, ds_path=self.ds_path)
         self.fs.create_config_file(self.get_config())
         if transformers is not None and len(transformers) > 0:
             self.apply_transformers(transformers)
+            rows = csv_processor.dir_to_features("Bee", paths["HIVE_DIR_IMAGES_TRANSFORMED"])
+            csv_processor.save_rows(rows, paths["HIVE_DIR_TRANSFORMED_CSV"])
         self.generate_csv_split()
         self.generate_records()
         self.fill_pipeline_config()
