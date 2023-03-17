@@ -37,6 +37,10 @@ class Hive:
     def set_dataset(self, type, path):
         self.ds_type = type
         self.ds_path = path
+
+    def is_transformed(self):
+        paths = self.fs.get_paths()
+        return os.path.exists(paths["HIVE_DIR_TRANSFORMED_CSV"])
     
     def set_train_params(self, num_steps, batch_size):
         self.batch_size = batch_size
@@ -78,7 +82,7 @@ class Hive:
         labels = self.generate_labels_file()
         train, test = self.get_csv_split(
             labels, 
-            paths["HIVE_DIR_TRANSFORMED_CSV"] if os.path.exists( paths["HIVE_DIR_TRANSFORMED_CSV"]) else paths["HIVE_DIR_CSV"]
+            paths["HIVE_DIR_TRANSFORMED_CSV"] if self.is_transformed() else paths["HIVE_DIR_CSV"]
         )
 
         random.seed(0)
@@ -96,13 +100,13 @@ class Hive:
         print("Generating records...")
         record_processor.create_record_csv(
             paths["HIVE_DIR_TRAIN_CSV"], 
-            paths["HIVE_DIR_IMAGES"], 
+            paths["HIVE_DIR_IMAGES_TRANSFORMED"] if self.is_transformed() else paths["HIVE_DIR_IMAGES"], 
             paths["HIVE_DIR_TRAIN_TFRECORD"], 
             paths["HIVE_DIR_LABELS"]
         )
         record_processor.create_record_csv(
             paths["HIVE_DIR_TEST_CSV"], 
-            paths["HIVE_DIR_IMAGES"], 
+            paths["HIVE_DIR_IMAGES_TRANSFORMED"] if self.is_transformed() else paths["HIVE_DIR_IMAGES"], 
             paths["HIVE_DIR_TEST_TFRECORD"], 
             paths["HIVE_DIR_LABELS"]
         )
