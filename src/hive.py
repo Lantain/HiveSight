@@ -156,25 +156,27 @@ class Hive:
     def pack(self, path):
         self.fs.pack_hive(path)
 
-    def generate_inference(self, ckpt: str, checkpoints_dir: str):
+    def generate_inference(self, ckpt: str = None):
         paths = self.fs.get_paths()
-
+        if ckpt is None:
+            ckpt = self.fs.get_checkpoints()[-1]
         CKPT_PIPELINE_DIR = f"{paths['HIVE_DIR_PATH']}/{ckpt}"
         CKPT_CONFIG = f"{CKPT_PIPELINE_DIR}/pipeline.config"
-
+    
         os.mkdir(CKPT_PIPELINE_DIR)
 
         shutil.copy(paths["HIVE_DIR_PIPELINE"], CKPT_PIPELINE_DIR)
 
         config_processor.set_checkpoint_value(
             CKPT_CONFIG, 
-            f"{checkpoints_dir}/{ckpt}",
+            f"{paths['HIVE_DIR_TRAINED']}/{ckpt}",
             CKPT_PIPELINE_DIR
         )
+        
         config_processor.export_inference_graph(
             CKPT_CONFIG, 
-            checkpoints_dir, 
-            f"{CKPT_PIPELINE_DIR}",
+            paths["HIVE_DIR_TRAINED"], 
+            CKPT_PIPELINE_DIR,
             ckpt
         )
     
