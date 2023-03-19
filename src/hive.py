@@ -178,8 +178,10 @@ class Hive:
             ckpt
         )
     
-    def use_checkpoint(self, ckpt):
+    def use_checkpoint(self, ckpt: str = None):
         paths = self.fs.get_paths()
+        if ckpt is None:
+            ckpt = self.fs.get_checkpoints()[-1]
         saved_model_path = f"{paths['HIVE_DIR_PATH']}/{ckpt}/saved_model"
         print(f"Loading {ckpt} model...", end=' ')
         model_fn = tf.saved_model.load(saved_model_path)

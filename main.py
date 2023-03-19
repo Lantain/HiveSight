@@ -9,6 +9,7 @@ from src.hive_fs import HiveFs
 from src.transformers.greyscale import GreyscaleTransformer
 from src.transformers.rotate import RotateTransformer
 from src.transformers.grey_histogram_eq import GreyHistogramEqTransformer
+from src.transformers.color_histogram_norm import ColorHistogramNormalizeTransformer
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train a hive')
@@ -22,6 +23,7 @@ if __name__ == '__main__':
     hive.set_dataset("remo", "./source/remo")
     hive.make(transformers=[
         # RotateTransformer(45), 
-        GreyscaleTransformer(), 
-        GreyHistogramEqTransformer()
+        # GreyscaleTransformer(), 
+        # GreyHistogramEqTransformer(),
+        ColorHistogramNormalizeTransformer()
     ])
