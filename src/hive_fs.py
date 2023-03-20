@@ -174,12 +174,3 @@ class HiveFs:
                 data = pd.read_csv(f"{paths['HIVE_DIR_DATASET_CSVS']}/{f}")
                 return data
 
-    def get_images(self) -> list[str]:
-        paths = self.get_paths()
-        cropped_path = paths["HIVE_DIR_DATASET_IMAGES_CROP"]
-        files = os.listdir(cropped_path)
-        paths = list()
-        for f in files:
-            path = f"{cropped_path}/{f}"
-            paths.append(path)
-        return paths

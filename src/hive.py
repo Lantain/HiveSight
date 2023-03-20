@@ -5,6 +5,7 @@ import json
 import time
 import random
 import pandas as pd
+from pipeline import Pipeline
 from src.hive_fs import HiveFs
 from src.datasets import remo
 from sklearn.model_selection import train_test_split
@@ -125,14 +126,16 @@ class Hive:
             config["batch_size"],
         )
 
-    def make(self, transformers: list[Transformer], out_dir: str = None):
+    def make(self, pipeline: Pipeline, out_dir: str = None):
         paths = self.fs.get_paths()
         self.fs.generate_dir(out_dir or self.fs.dir, ds_type=self.ds_type, ds_path=self.ds_path)
         self.fs.create_config_file(self.get_config())
-        if transformers is not None and len(transformers) > 0:
-            self.apply_transformers(transformers)
+        pp = pipeline.from_dir(paths["HIVE_DIR_DATASET_IMAGES_CROP"])
+        pp.pipe_to_dir(paths['HIVE_DIR_IMAGES_TRANSFORMED'])
+        if pipeline.has_transformers():
             rows = csv_processor.dir_to_features("Bee", paths["HIVE_DIR_IMAGES_TRANSFORMED"])
             csv_processor.save_rows(rows, paths["HIVE_DIR_TRANSFORMED_CSV"])
+
         self.generate_csv_split()
         self.generate_records()
         self.fill_pipeline_config()
@@ -163,7 +166,7 @@ class Hive:
         CKPT_PIPELINE_DIR = f"{paths['HIVE_DIR_PATH']}/{ckpt}"
         CKPT_CONFIG = f"{CKPT_PIPELINE_DIR}/pipeline.config"
     
-        os.mkdir(CKPT_PIPELINE_DIR)
+        os.makedirs(CKPT_PIPELINE_DIR, exist_ok=True)
 
         shutil.copy(paths["HIVE_DIR_PIPELINE"], CKPT_PIPELINE_DIR)
 
@@ -189,18 +192,3 @@ class Hive:
         model_fn = tf.saved_model.load(saved_model_path)
         print('Done!')
         return model_fn
-
-    def apply_transformers(self, transformers: list[Transformer]):
-        images = self.fs.get_images()
-        paths = self.fs.get_paths()
-        for image in images:
-            img = Image.open(image)
-            
-            for transformer in transformers:
-                results = transformer.transform(img)
-                img = results[0]
-            
-            img.save(
-                f"{paths['HIVE_DIR_IMAGES_TRANSFORMED']}/{os.path.basename(image)}"
-            )
-        
