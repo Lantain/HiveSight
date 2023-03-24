@@ -140,7 +140,7 @@ class Hive:
         self.generate_records()
         self.fill_pipeline_config()
 
-    def train(self):
+    def train(self, max_checkpoints=5):
         paths = self.fs.get_paths()
         tf.config.set_soft_device_placement(True)
         strategy = tf.compat.v2.distribute.MirroredStrategy()
@@ -153,7 +153,7 @@ class Hive:
                 use_tpu=False,
                 checkpoint_every_n=1000,
                 record_summaries=True,
-                checkpoint_max_to_keep=20
+                checkpoint_max_to_keep=max_checkpoints
             )
 
     def pack(self, path):

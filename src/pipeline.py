@@ -4,18 +4,24 @@ from PIL import Image
 
 class PipelineProcessor:
     src_dir: str = None
+    limit: int = None
     images: list[str] = list()
     transformers: list[Transformer]
 
-    def __init__(self, src_dir: str, transformers: list[Transformer]) -> None:
+    def __init__(self, src_dir: str, transformers: list[Transformer], limit=None) -> None:
         self.transformers = transformers
+        self.limit = limit
         files = os.listdir(src_dir)
         for f in files:
             self.images.append(f"{src_dir}/{f}")
 
     def pipe_to_dir(self, out_dir: str):
         os.makedirs(out_dir, exist_ok=True)
+        i = 1
         for image in self.images:
+            if self.limit and i < self.limit:
+                break
+
             img = Image.open(image)
             
             for transformer in self.transformers:
