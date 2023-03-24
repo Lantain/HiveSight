@@ -3,7 +3,7 @@ import shutil
 import os
 import json
 import time
-from pipeline import Pipeline
+from src.pipeline import Pipeline
 
 from src.hive import Hive
 from src.hive_fs import HiveFs
@@ -11,7 +11,7 @@ from src.transformers.greyscale import GreyscaleTransformer
 from src.transformers.rotate import RotateTransformer
 from src.transformers.grey_histogram_eq import GreyHistogramEqTransformer
 from src.transformers.color_histogram_norm import ColorHistogramNormalizeTransformer
-from transformers.normalized_size import NormalizedSizeTransformer
+from src.transformers.normalized_size import NormalizedSizeTransformer
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train a hive')
@@ -22,7 +22,7 @@ if __name__ == '__main__':
         # RotateTransformer(45), 
         # GreyscaleTransformer(), 
         # GreyHistogramEqTransformer(),
-        NormalizedSizeTransformer(),
+        # NormalizedSizeTransformer(),
         ColorHistogramNormalizeTransformer()
     ])
     hive_fs = HiveFs(out_dir="out/", dir="out/myhive", model='ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8')

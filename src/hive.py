@@ -5,7 +5,7 @@ import json
 import time
 import random
 import pandas as pd
-from pipeline import Pipeline
+from src.pipeline import Pipeline
 from src.hive_fs import HiveFs
 from src.datasets import remo
 from sklearn.model_selection import train_test_split
