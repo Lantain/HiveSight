@@ -25,7 +25,7 @@ def dir_to_features(label, path):
     for root, dirs, files in os.walk(path):
         for f in files:
             image = Image.open(f"{path}/{f}")
-            rows.append([f, label, image.width, image.height, 0, 0, image.width, image.height])
+            rows.append([f, label, image.width, image.height, 1, 1, image.width - 1, image.height -1])
     return rows
 
 def unique_column_values(csv_path, column) -> list:

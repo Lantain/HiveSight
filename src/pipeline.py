@@ -8,7 +8,7 @@ class PipelineProcessor:
     images: list[str] = list()
     transformers: list[Transformer]
 
-    def __init__(self, src_dir: str, transformers: list[Transformer], limit=None) -> None:
+    def __init__(self, src_dir: str, transformers: list[Transformer], limit: int = None) -> None:
         self.transformers = transformers
         self.limit = limit
         files = os.listdir(src_dir)
@@ -19,7 +19,7 @@ class PipelineProcessor:
         os.makedirs(out_dir, exist_ok=True)
         i = 1
         for image in self.images:
-            if self.limit and i < self.limit:
+            if self.limit and i > self.limit:
                 break
 
             img = Image.open(image)
@@ -29,6 +29,7 @@ class PipelineProcessor:
                 img = results[0]
             
             img.save(f"{out_dir}/{os.path.basename(image)}")
+            i += 1
     
     def get_image(self, n: int) -> Image.Image:
         if n < len(self.images) and n >= 0:
@@ -40,12 +41,13 @@ class PipelineProcessor:
 
 class Pipeline:
     transformers: list[Transformer]
-
-    def __init__(self, transformers: list[Transformer] = list()) -> None:
+    limit: int = None
+    def __init__(self, transformers: list[Transformer] = list(), limit: int = None) -> None:
         self.transformers = transformers
+        self.limit = limit
 
     def from_dir(self, src_dir) -> PipelineProcessor:
-        return PipelineProcessor(src_dir, self.transformers)
+        return PipelineProcessor(src_dir, self.transformers, self.limit)
     
     def pipe_image(self, img_path: str) -> Image.Image:
         img = Image.open(img_path)

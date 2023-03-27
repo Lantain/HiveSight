@@ -81,10 +81,8 @@ class Hive:
     def generate_csv_split(self):
         paths = self.fs.get_paths()
         labels = self.generate_labels_file()
-        train, test = self.get_csv_split(
-            labels, 
-            paths["HIVE_DIR_TRANSFORMED_CSV"] if self.is_transformed() else paths["HIVE_DIR_CSV"]
-        )
+        csv = paths["HIVE_DIR_TRANSFORMED_CSV"] if self.is_transformed() else paths["HIVE_DIR_CSV"]
+        train, test = self.get_csv_split(labels, csv)
 
         random.seed(0)
         random.shuffle(train)
@@ -99,15 +97,16 @@ class Hive:
     def generate_records(self):
         paths = self.fs.get_paths()
         print("Generating records...")
+        img_dir = paths["HIVE_DIR_IMAGES_TRANSFORMED"] if self.is_transformed() else paths["HIVE_DIR_IMAGES"]
         record_processor.create_record_csv(
             paths["HIVE_DIR_TRAIN_CSV"], 
-            paths["HIVE_DIR_IMAGES_TRANSFORMED"] if self.is_transformed() else paths["HIVE_DIR_IMAGES"], 
+            img_dir, 
             paths["HIVE_DIR_TRAIN_TFRECORD"], 
             paths["HIVE_DIR_LABELS"]
         )
         record_processor.create_record_csv(
             paths["HIVE_DIR_TEST_CSV"], 
-            paths["HIVE_DIR_IMAGES_TRANSFORMED"] if self.is_transformed() else paths["HIVE_DIR_IMAGES"], 
+            img_dir, 
             paths["HIVE_DIR_TEST_TFRECORD"], 
             paths["HIVE_DIR_LABELS"]
         )
@@ -143,8 +142,10 @@ class Hive:
     def train(self, max_checkpoints=5):
         paths = self.fs.get_paths()
         tf.config.set_soft_device_placement(True)
+        # tf.debugging.set_log_device_placement(True)
         strategy = tf.compat.v2.distribute.MirroredStrategy()
-
+        print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+        print(tf.config.list_physical_devices('GPU'))
         with strategy.scope():
             model_lib_v2.train_loop(
                 pipeline_config_path=paths["HIVE_DIR_PIPELINE"],
