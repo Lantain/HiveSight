@@ -5,6 +5,7 @@ import json
 import time
 import random
 import pandas as pd
+from src.configurators.model import Configurator
 from src.pipeline import Pipeline
 from src.hive_fs import HiveFs
 from src.datasets import remo
@@ -81,7 +82,8 @@ class Hive:
     def generate_csv_split(self):
         paths = self.fs.get_paths()
         labels = self.generate_labels_file()
-        csv = paths["HIVE_DIR_TRANSFORMED_CSV"] if self.is_transformed() else paths["HIVE_DIR_CSV"]
+        # csv = paths["HIVE_DIR_TRANSFORMED_CSV"] if self.is_transformed() else paths["HIVE_DIR_CSV"]
+        csv = paths["HIVE_DIR_CSV"]
         train, test = self.get_csv_split(labels, csv)
 
         random.seed(0)
@@ -111,7 +113,7 @@ class Hive:
             paths["HIVE_DIR_LABELS"]
         )
     
-    def fill_pipeline_config(self):
+    def fill_pipeline_config(self, configurators: list[Configurator]):
         paths = self.fs.get_paths()
         config = self.fs.get_config_file()
 
@@ -123,21 +125,22 @@ class Hive:
             paths["HIVE_DIR_TEST_TFRECORD"],
             config["num_steps"],
             config["batch_size"],
+            configurators
         )
 
-    def make(self, pipeline: Pipeline, out_dir: str = None):
+    def make(self, pipeline: Pipeline, configurators: list[Configurator] = list(), out_dir: str = None):
         paths = self.fs.get_paths()
         self.fs.generate_dir(out_dir or self.fs.dir, ds_type=self.ds_type, ds_path=self.ds_path)
         self.fs.create_config_file(self.get_config())
-        pp = pipeline.from_dir(paths["HIVE_DIR_DATASET_IMAGES_CROP"])
+        pp = pipeline.from_dir(paths["HIVE_DIR_IMAGES"])
         pp.pipe_to_dir(paths['HIVE_DIR_IMAGES_TRANSFORMED'])
-        if pipeline.has_transformers():
-            rows = csv_processor.dir_to_features("Bee", paths["HIVE_DIR_IMAGES_TRANSFORMED"])
-            csv_processor.save_rows(rows, paths["HIVE_DIR_TRANSFORMED_CSV"])
+        # if pipeline.has_transformers():
+            # rows = csv_processor.dir_to_features("Bee", paths["HIVE_DIR_IMAGES_TRANSFORMED"])
+            # csv_processor.save_rows(rows, paths["HIVE_DIR_TRANSFORMED_CSV"])
 
         self.generate_csv_split()
         self.generate_records()
-        self.fill_pipeline_config()
+        self.fill_pipeline_config(configurators)
 
     def train(self, max_checkpoints=5):
         paths = self.fs.get_paths()

@@ -6,6 +6,7 @@ from google.protobuf import text_format
 from object_detection.utils import config_util
 from object_detection import exporter_lib_v2
 from object_detection.protos import pipeline_pb2
+from src.configurators.model import Configurator
 
 from src.utils.util import get_last_checkpoint_name
 
@@ -15,15 +16,6 @@ def update_config_values_regex(config_path, values):
     with open(config_path, 'w') as f:
         for obj in values:
             config = re.sub(obj['regex'],  obj['value'], config)
-        f.write(config)
-
-def set_config_value(key, value, model_dir):
-    path = f"{model_dir}/pipeline.config"
-    with open(path) as f:
-        config = f.read()
-
-    with open(path, 'w') as f:
-        config = re.sub(f'{key}: ".*?"', f'{key}: "{value}"', config)
         f.write(config)
 
 def get_train_record_path():
@@ -136,7 +128,7 @@ def export_inference_graph(pipeline_config_path, trained_checkpoint_dir, output_
 
     # config_util.save_pipeline_config(pipeline_config, output_directory)                                                
 
-def fill_config(model, model_dir, labels_path, train_rec_path, test_rec_path, num_steps, batch_size):
+def fill_config(model, model_dir, labels_path, train_rec_path, test_rec_path, num_steps, batch_size, configurators: list[Configurator] = list()):
     pipeline_config_path = f"{model_dir}/pipeline.config"
     checkpoint_name = get_last_checkpoint_name(f"{model_dir}/trained")
     checkpoint_path = get_fine_tune_checkpoint(model)
@@ -158,7 +150,11 @@ def fill_config(model, model_dir, labels_path, train_rec_path, test_rec_path, nu
     configs['train_config'].num_steps = num_steps
     configs['train_config'].batch_size = batch_size
     configs['train_config'].fine_tune_checkpoint = checkpoint_path
-
+    
+    if len(configurators):
+        for c in configurators:
+            c.modify(configs)
+    
     # if re.match('ssd_mobilenet_v2_fpnlite.+', model):
     #     configs['train_input_config'].tf_record_input_reader.input_path[:] = [get_train_record_path()]
     #     configs['eval_input_config'].tf_record_input_reader.input_path[:] = [get_test_record_path()]

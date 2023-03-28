@@ -15,4 +15,4 @@ echo "Set up dependencies"
 python -m pip install .
 
 echo "Test compiled model builder"
-#python object_detection/builders/model_builder_tf2_test.py
+python object_detection/builders/model_builder_tf2_test.py
