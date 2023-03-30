@@ -6,6 +6,7 @@ import time
 import re
 import random
 import pandas as pd
+from src.pipeline import Pipeline
 from src.processors import tf_zoo_models as model_processor
 from src.processors import labels as labels_processor
 from src.datasets import remo
@@ -35,7 +36,7 @@ class HiveFs:
     model = None
     out = "./out"
 
-    def __init__(self, dir: str, model: str, out_dir: str, hive_path: str = None):
+    def __init__(self,  out_dir: str = "./out", dir: str = None, model: str = None, hive_path: str = None):
         if hive_path is not None:
             name = os.path.basename(hive_path).replace('.hive', '')
             self.dir = f"{out_dir}/{name}"
@@ -109,7 +110,7 @@ class HiveFs:
             "HIVE_DIR_TRAIN_TFRECORD": f"{HIVE_DIR_PATH}/train.tfrecord",
         }
 
-    def generate_dir(self, dir_path, ds_type, ds_path):
+    def generate_dir(self, dir_path, ds_type, ds_path, pipeline: Pipeline):
         self.dir_path = dir_path
         paths = self.get_paths()
         self.generate_dir_structure()
@@ -122,10 +123,12 @@ class HiveFs:
             paths["HIVE_DIR_PATH"]
         )
         # Move images
-        shutil.copytree(
-            paths["HIVE_DIR_DATASET_IMAGES"],
-            paths["HIVE_DIR_IMAGES"]
-        )
+        pl = pipeline.from_dir(paths["HIVE_DIR_DATASET_IMAGES"])
+        pl.pipe_to_dir(paths["HIVE_DIR_IMAGES"])
+        # shutil.copytree(
+        #     paths["HIVE_DIR_DATASET_IMAGES"],
+        #     paths["HIVE_DIR_IMAGES"]
+        # )
         # Copy annotations
         shutil.copy(
             paths["HIVE_DIR_DATASET_CSV"],

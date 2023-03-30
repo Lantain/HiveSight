@@ -1,14 +1,15 @@
 import argparse
 import shutil
 import os
+import cv2
 import json
 import time
 import random
 import pandas as pd
+from matplotlib import pyplot as plt
 from src.configurators.model import Configurator
 from src.pipeline import Pipeline
 from src.hive_fs import HiveFs
-from src.datasets import remo
 from sklearn.model_selection import train_test_split
 from src.processors import tf_zoo_models as model_processor
 from src.processors import csv as csv_processor
@@ -20,6 +21,7 @@ import tensorflow as tf
 from object_detection import model_lib_v2
 from PIL import Image
 from src.transformers.model import Transformer
+from src import validate 
 
 OUT_PATH = "./out"
 
@@ -129,11 +131,11 @@ class Hive:
         )
 
     def make(self, pipeline: Pipeline, configurators: list[Configurator] = list(), out_dir: str = None):
-        paths = self.fs.get_paths()
-        self.fs.generate_dir(out_dir or self.fs.dir, ds_type=self.ds_type, ds_path=self.ds_path)
+        # paths = self.fs.get_paths()
+        self.fs.generate_dir(out_dir or self.fs.dir, ds_type=self.ds_type, ds_path=self.ds_path, pipeline=pipeline)
         self.fs.create_config_file(self.get_config())
-        pp = pipeline.from_dir(paths["HIVE_DIR_IMAGES"])
-        pp.pipe_to_dir(paths['HIVE_DIR_IMAGES_TRANSFORMED'])
+        # pp = pipeline.from_dir(paths["HIVE_DIR_IMAGES"])
+        # pp.pipe_to_dir(paths['HIVE_DIR_IMAGES_TRANSFORMED'])
         # if pipeline.has_transformers():
             # rows = csv_processor.dir_to_features("Bee", paths["HIVE_DIR_IMAGES_TRANSFORMED"])
             # csv_processor.save_rows(rows, paths["HIVE_DIR_TRANSFORMED_CSV"])
@@ -196,3 +198,37 @@ class Hive:
         model_fn = tf.saved_model.load(saved_model_path)
         print('Done!')
         return model_fn
+
+    def analyze(self, img_paths: list[str], out_dir: str):
+        paths = self.fs.get_paths()
+        os.makedirs(out_dir, exist_ok=True)
+        ckpt = self.fs.get_checkpoints()[-1]
+        saved_model_path = f"{paths['HIVE_DIR_PATH']}/{ckpt}/saved_model"
+        
+        model_fn = tf.saved_model.load(saved_model_path)
+        for ip in img_paths:
+            basename = os.path.basename(ip)
+            detections = validate.get_detections(model_fn, ip)
+            img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip)
+            img = cv2.imread(ip, 3)
+            b,g,r = cv2.split(img)           # get b, g, r
+            rgb_img = cv2.merge([r,g,b])     # switch it to r, g, b
+
+            fig = plt.figure(figsize=(20, 14))
+            fig.suptitle(f"{ckpt} - {ip}", fontsize=16)
+
+            rows = 1
+            columns = 2
+
+            fig.add_subplot(rows, columns, 1)
+            plt.imshow(rgb_img)
+            plt.axis('off')
+            plt.title("Original")
+
+            fig.add_subplot(rows, columns, 2)
+            plt.imshow(img_detections)
+            plt.axis('off')
+            plt.title("Detections")
+
+            plt.savefig(f"{out_dir}/{ckpt}--{basename}.png")
+            plt.close()
