@@ -33,11 +33,15 @@ class PipelineProcessor:
     
     def get_image(self, n: int) -> Image.Image:
         if n < len(self.images) and n >= 0:
-            img = Image.open(self.images[n])
-            for tr in self.transformers:
-                img = tr.transform(img)
-            
-            return img
+            return self.get_image_by_name(self, self.images[n])
+        
+    def get_image_by_name(self, name: str) -> Image.Image:
+        for image in self.images:
+            if name in image:
+                img = Image.open(image)
+                for tr in self.transformers:
+                    img = tr.transform(img)
+                return img
 
 class Pipeline:
     transformers: list[Transformer]
@@ -48,7 +52,7 @@ class Pipeline:
 
     def from_dir(self, src_dir) -> PipelineProcessor:
         return PipelineProcessor(src_dir, self.transformers, self.limit)
-    
+
     def pipe_image(self, img_path: str) -> Image.Image:
         img = Image.open(img_path)
         for tr in self.transformers:

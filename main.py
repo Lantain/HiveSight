@@ -24,10 +24,10 @@ if __name__ == '__main__':
     pipeline = Pipeline([
         # RotateTransformer(45), 
         # GreyscaleTransformer(), 
-        GreyHistogramEqTransformer(),
+        # GreyHistogramEqTransformer(),
         # NormalizedSizeTransformer(maxh=80, maxw=80),
         # ColorHistogramNormalizeTransformer()
-    ], limit=100)
+    ])
     hive_fs = HiveFs(out_dir="out/", dir="out/myhive", model='ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8')
     hive = Hive(hive_fs)
     hive.set_train_params(20000, 2)

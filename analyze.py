@@ -39,15 +39,25 @@ if __name__ == '__main__':
     parser.add_argument('--imgs_dir', type=str, required=False, default=".")
     args = parser.parse_args()
     pipeline = Pipeline([
-        GreyHistogramEqClaheTransformer
+        # GreyHistogramEqClaheTransformer()
+        GreyHistogramEqTransformer()
     ])
+
+    pipeline_out = "./out/pipe"
+    if os.path.exists(pipeline_out):
+        shutil.rmtree(pipeline_out)
+    os.makedirs(pipeline_out, exist_ok=True)
+
+    pl = pipeline.from_dir(args.imgs_dir)
+    pl.pipe_to_dir(pipeline_out)
     hive_fs = HiveFs(out_dir=args.out, hive_path=args.hive)
     hive = Hive(hive_fs)
 
-    files = os.listdir(args.imgs_dir)
+
+    files = os.listdir(pipeline_out)
     paths = list()
     for f in files:
-        paths.append(f"{args.imgs_dir}/{f}")
+        paths.append(f"{pipeline_out}/{f}")
 
     hive.analyze(paths, args.out)
     
