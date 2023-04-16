@@ -75,10 +75,13 @@ class Hive:
         train = list()
         df = pd.read_csv(csv_path or paths["HIVE_DIR_CSV"])
         for label in labels:
-            dft = df[df["class"] == label]
-            df_train, df_test = train_test_split(dft, test_size=config["test_train_ratio"])
-            train.extend(df_train.values.tolist())
-            test.extend(df_test.values.tolist())
+            try:
+                dft = df[df["class"] == label]
+                df_train, df_test = train_test_split(dft, test_size=config["test_train_ratio"])
+                train.extend(df_train.values.tolist())
+                test.extend(df_test.values.tolist())
+            except:
+                print("huh")
         return train, test
 
     def generate_csv_split(self):

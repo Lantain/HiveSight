@@ -28,12 +28,12 @@ if __name__ == '__main__':
         # NormalizedSizeTransformer(maxh=80, maxw=80),
         # ColorHistogramNormalizeTransformer()
     ])
-    hive_fs = HiveFs(out_dir="out/", dir="out/myhive", model='ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8')
+    hive_fs = HiveFs(out_dir="out/", dir="out/myhive_midbee", model='ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8')
     hive = Hive(hive_fs)
     hive.set_train_params(20000, 2)
-    hive.set_dataset("remo", "./source/remo")
+    hive.set_dataset("remo", "./source/midbee")
     hive.make(pipeline=pipeline, configurators=list([RandomRotation90Configurator()]))
-    # hive.train()
+    hive.train()
     # hive.generate_inference()
     hive.pack("myhive2.hive")
     # img_path = f"~/counted_bees/24_bees.jpg"
