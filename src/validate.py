@@ -38,7 +38,7 @@ def show_images_pair(img_np1, img_np2):
 
     fig.show()
 
-def get_processed_image(detections, labels_path, input_img_path):
+def get_processed_image(detections, labels_path, input_img_path, threshold=.2):
     category_index = get_category_index(labels_path)
     image_np_with_detections = utils.image_to_np(input_img_path)
 
@@ -50,7 +50,7 @@ def get_processed_image(detections, labels_path, input_img_path):
       category_index,
       use_normalized_coordinates=True,
       max_boxes_to_draw=200,
-      min_score_thresh=.2, # Adjust this value to set the minimum probability boxes to be classified as True
+      min_score_thresh=threshold, # Adjust this value to set the minimum probability boxes to be classified as True
       agnostic_mode=False)
 
     return image_np_with_detections

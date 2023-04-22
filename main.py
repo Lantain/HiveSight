@@ -11,6 +11,7 @@ from src.hive_fs import HiveFs
 from src.transformers.greyscale import GreyscaleTransformer
 from src.transformers.rotate import RotateTransformer
 from src.configurators.random_rotation_90 import RandomRotation90Configurator
+from src.configurators.size import SizeConfigurator
 from src.transformers.grey_histogram_eq import GreyHistogramEqTransformer
 from src.transformers.color_histogram_norm import ColorHistogramNormalizeTransformer
 from src.transformers.normalized_size import NormalizedSizeTransformer
@@ -32,7 +33,7 @@ if __name__ == '__main__':
     hive = Hive(hive_fs)
     hive.set_train_params(20000, 2)
     hive.set_dataset("remo", "./source/midbee")
-    hive.make(pipeline=pipeline, configurators=list([RandomRotation90Configurator()]))
+    hive.make(pipeline=pipeline, configurators=list([SizeConfigurator(420, 420)]))
     hive.train()
     # hive.generate_inference()
     hive.pack("myhive2.hive")

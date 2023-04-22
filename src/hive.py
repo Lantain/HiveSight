@@ -202,7 +202,7 @@ class Hive:
         print('Done!')
         return model_fn
 
-    def analyze(self, img_paths: list[str], out_dir: str):
+    def analyze(self, img_paths: list[str], out_dir: str, threshold=.3):
         paths = self.fs.get_paths()
         os.makedirs(out_dir, exist_ok=True)
         ckpt = self.fs.get_checkpoints()[-1]
@@ -212,7 +212,7 @@ class Hive:
         for ip in img_paths:
             basename = os.path.basename(ip)
             detections = validate.get_detections(model_fn, ip)
-            img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip)
+            img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip, threshold)
             img = cv2.imread(ip, 3)
             b,g,r = cv2.split(img)           # get b, g, r
             rgb_img = cv2.merge([r,g,b])     # switch it to r, g, b
