@@ -30,6 +30,6 @@ class HistgramEqualizeColorCLAHE(Transformer):
         # Convert the LAB image back to BGR color space
         enhanced_image = cv2.cvtColor(enhanced_lab_image, cv2.COLOR_LAB2BGR)
 
-        return Image.fromarray(enhanced_image)
+        return list([Image.fromarray(enhanced_image)])
 
     

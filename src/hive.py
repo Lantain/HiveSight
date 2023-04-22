@@ -235,3 +235,14 @@ class Hive:
 
             plt.savefig(f"{out_dir}/{ckpt}--{basename}.png")
             plt.close()
+
+    def evaluate(self):
+        paths = self.fs.get_paths()
+        model_lib_v2.eval_continuously(
+            pipeline_config_path=paths['HIVE_DIR_PIPELINE'],
+            model_dir=paths['HIVE_MODEL_DIR'],
+            train_steps=10000,
+            sample_1_of_n_eval_examples=None,
+            sample_1_of_n_eval_on_train_examples=5,
+            checkpoint_dir=paths['HIVE_TRAINED'],
+            wait_interval=300, timeout=3600)
