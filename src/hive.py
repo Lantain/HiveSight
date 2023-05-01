@@ -22,6 +22,7 @@ from object_detection import model_lib_v2
 from PIL import Image
 from src.transformers.model import Transformer
 from src import validate 
+import time
 
 OUT_PATH = "./out"
 
@@ -202,8 +203,9 @@ class Hive:
         print('Done!')
         return model_fn
 
-    def analyze(self, img_paths: list[str], out_dir: str, threshold=.3):
+    def analyze(self, img_paths: list[str], threshold=.3):
         paths = self.fs.get_paths()
+        out_dir = f"{paths['HIVE_DIR_PATH']}/analyze"
         os.makedirs(out_dir, exist_ok=True)
         ckpt = self.fs.get_checkpoints()[-1]
         saved_model_path = f"{paths['HIVE_DIR_PATH']}/{ckpt}/saved_model"
@@ -212,7 +214,18 @@ class Hive:
         for ip in img_paths:
             basename = os.path.basename(ip)
             detections = validate.get_detections(model_fn, ip)
-            img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip, threshold)
+            thresholds = list([0.1, 0.3, threshold])
+            threshold_imgs = list()
+            
+            for t in thresholds:
+                img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip, t)
+                threshold_imgs.append(img_detections)
+                
+            true_detections_count = 0
+            for score in detections['detection_scores']:
+                if score > threshold:
+                    true_detections_count += 1
+
             img = cv2.imread(ip, 3)
             b,g,r = cv2.split(img)           # get b, g, r
             rgb_img = cv2.merge([r,g,b])     # switch it to r, g, b
@@ -220,29 +233,94 @@ class Hive:
             fig = plt.figure(figsize=(20, 14))
             fig.suptitle(f"{ckpt} - {ip}", fontsize=16)
 
-            rows = 1
+            rows = 2
             columns = 2
 
             fig.add_subplot(rows, columns, 1)
+            plt.imshow(threshold_imgs[0])
+            plt.axis('off')
+            plt.title(f"{str(thresholds[0])} Threshold")
+            
+            fig.add_subplot(rows, columns, 2)
+            plt.imshow(threshold_imgs[1])
+            plt.axis('off')
+            plt.title(f"{str(thresholds[1])} Threshold")
+            
+            
+            fig.add_subplot(rows, columns, 3)
             plt.imshow(rgb_img)
             plt.axis('off')
             plt.title("Original")
 
-            fig.add_subplot(rows, columns, 2)
-            plt.imshow(img_detections)
+            fig.add_subplot(rows, columns, 4)
+            plt.imshow(threshold_imgs[len(threshold_imgs) - 1])
             plt.axis('off')
-            plt.title("Detections")
-
+            plt.title(f"{true_detections_count} Detections")
             plt.savefig(f"{out_dir}/{ckpt}--{basename}.png")
             plt.close()
 
     def evaluate(self):
         paths = self.fs.get_paths()
+        self.fill_pipeline_config([])
         model_lib_v2.eval_continuously(
             pipeline_config_path=paths['HIVE_DIR_PIPELINE'],
             model_dir=paths['HIVE_MODEL_DIR'],
-            train_steps=10000,
-            sample_1_of_n_eval_examples=None,
-            sample_1_of_n_eval_on_train_examples=5,
             checkpoint_dir=paths['HIVE_TRAINED'],
-            wait_interval=300, timeout=3600)
+        )
+    
+    def monitor(self, out_dir: str, img_paths: list[str]):
+        paths = self.fs.get_paths()
+        ckpt = self.fs.get_checkpoints()[-1]
+        saved_model_path = f"{paths['HIVE_DIR_PATH']}/{ckpt}/saved_model"
+        model_fn = tf.saved_model.load(saved_model_path)
+        
+        while True:
+            print("Checkin@")
+            for ip in img_paths:
+                basename = os.path.basename(ip)
+                detections = validate.get_detections(model_fn, ip)
+                thresholds = list([.1, .3, .5])
+                threshold_imgs = list()
+                
+                for t in thresholds:
+                    img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip, t)
+                    threshold_imgs.append(img_detections)
+                    
+                true_detections_count = 0
+                for score in detections['detection_scores']:
+                    if score > .5:
+                        true_detections_count += 1
+                print(f"Found {true_detections_count}!")
+                img = cv2.imread(ip, 3)
+                b,g,r = cv2.split(img)           # get b, g, r
+                rgb_img = cv2.merge([r,g,b])     # switch it to r, g, b
+
+                fig = plt.figure(figsize=(20, 14))
+                fig.suptitle(f"{ckpt} - {ip}", fontsize=16)
+
+                rows = 2
+                columns = 2
+
+                fig.add_subplot(rows, columns, 1)
+                plt.imshow(threshold_imgs[0])
+                plt.axis('off')
+                plt.title(f"{str(thresholds[0])} Threshold")
+                
+                fig.add_subplot(rows, columns, 2)
+                plt.imshow(threshold_imgs[1])
+                plt.axis('off')
+                plt.title(f"{str(thresholds[1])} Threshold")
+                
+                
+                fig.add_subplot(rows, columns, 3)
+                plt.imshow(rgb_img)
+                plt.axis('off')
+                plt.title("Original")
+
+                fig.add_subplot(rows, columns, 4)
+                plt.imshow(threshold_imgs[len(threshold_imgs) - 1])
+                plt.axis('off')
+                plt.title(f"{true_detections_count} Detections")
+                plt.savefig(f"{out_dir}/{ckpt}--{basename}.png")
+                plt.close()
+            time.sleep(3)

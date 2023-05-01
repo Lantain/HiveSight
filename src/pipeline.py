@@ -28,7 +28,7 @@ class PipelineProcessor:
                 results = transformer.transform(img)
                 img = results[0]
             
-            img.save(f"{out_dir}/{os.path.basename(image)}")
+            img.save(f"{out_dir}/{os.path.basename(image)}", quality=100, subsampling=0)
             i += 1
     
     def get_image(self, n: int) -> Image.Image:

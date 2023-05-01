@@ -27,5 +27,5 @@ def plot_image_height_width_distribution(folder_path):
     plt.title("Image Height and Width Distribution")
     plt.show()
 
-folder_path = 'out\myhive_midbee\dataset\crop'
+folder_path = 'out/1682527389_9bee_protoc/dataset/crop'
 plot_image_height_width_distribution(folder_path)

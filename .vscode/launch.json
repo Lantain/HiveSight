@@ -12,6 +12,58 @@
             "console": "integratedTerminal",
             "args": [],
             "justMyCode": true   
+        },
+        {
+            "name": "Python: Eval",
+            "type": "python",
+            "request": "launch",
+            "program": "evaluate.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--hive=${input:hive}",
+                "--out=./out/eval"
+            ],
+            "justMyCode": true   
+        },
+        {
+            "name": "Python: Analyze",
+            "type": "python",
+            "request": "launch",
+            "program": "analyze.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--hive=${input:hive}",
+                "--out=${input:out}",
+                "--imgs_dir=D:/PhD/bigbees/res9_eval",
+                "--threshold=.4"
+            ],
+            "justMyCode": true   
+        },
+        {
+            "name": "Python: Monitor",
+            "type": "python",
+            "request": "launch",
+            "program": "monitor.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--hive=${input:hive}",
+                "--out=${input:out}/monitor",
+                "--target_dir=D:/PhD/trash"
+            ],
+            "justMyCode": true   
+        }
+    ],
+    "inputs": [
+        {
+            "id": "hive",
+            "description": "Enter Hive path",
+            "type": "promptString"
+        },
+        {
+            "id": "out",
+            "description": "Out dir",
+            "default": "./out",
+            "type": "promptString"
         }
     ]
 }

@@ -6,8 +6,9 @@ from PIL import Image, ImageOps
 class NoiseReductionTransformer(Transformer):
     kernel_size = 3
 
-    def __init__(self, method: str) -> None:
+    def __init__(self, method: str, kernel = 3) -> None:
         self.method = method
+        self.kernel_size = kernel
         super().__init__()
 
     def transform(self, image: Image.Image) -> list[Image.Image]:
