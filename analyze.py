@@ -35,7 +35,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     pipeline = Pipeline([
         # HistgramEqualizeColorCLAHE(),
-        NoiseReductionTransformer('gaussian', 21)
+        # NoiseReductionTransformer('gaussian', .5)
     ])
 
     pipeline_out = "./out/pipe"
@@ -61,4 +61,4 @@ if __name__ == '__main__':
 # Introduction should have a following structure: why bees are important for agriculture, the number of bees is decreasing, why bee monitoring is important, how usage of neural networks could help in bee hive monitoring, how usage of neiral networks is better than traditional bee observation methods.
 # For object detection task SSD Mobilenet from Tensorflow Object Detection Zoo was used. It was trained on manually annotated dataset consisting of bee photos. At first it was trained as it is, and next it was trained with image normalization techniques(gauss blur, histogram equalization) applied to the dataset and also some instruments from Tensorflow 2 Object Detection API  were utilized: random rotation to 90 degrees, random greyscale, input image resizing.
 # Training results can be randomly generated in your response
-                #
+#
