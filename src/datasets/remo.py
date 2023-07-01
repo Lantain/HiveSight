@@ -90,3 +90,15 @@ def generate_dataset(remo_json, source_images_dir, out_dir):
     generate_csv_from_annotation_set(data, f'{out_dir}/annotations.csv')
     labels = get_labels_list(data)
     labels_processor.generate_labels_file(labels, f'{out_dir}/labels.pbtxt')
+
+def get_box_mapping(remo_json):
+    f = open(remo_json)
+    data = json.load(f)
+    map = {}
+    for entry in data:
+        boxes = list()
+        for bbox in entry["annotations"]:
+            boxes.append((bbox['bbox']['xmin'], bbox['bbox']['ymin'], bbox['bbox']['xmax'], bbox['bbox']['ymax']))
+        map[entry['file_name']] = boxes
+    return map
+    

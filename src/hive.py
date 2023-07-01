@@ -23,7 +23,7 @@ from PIL import Image
 from src.transformers.model import Transformer
 from src import validate 
 import time
-
+from src.utils import iou as iou
 OUT_PATH = "./out"
 
 class Hive:
@@ -203,19 +203,20 @@ class Hive:
         print('Done!')
         return model_fn
 
-    def analyze(self, img_paths: list[str], threshold=.3):
+    def analyze(self, img_paths: list[str], threshold=.3, eval_mapping = {}):
         paths = self.fs.get_paths()
         out_dir = f"{paths['HIVE_DIR_PATH']}/analyze"
         os.makedirs(out_dir, exist_ok=True)
         ckpt = self.fs.get_checkpoints()[-1]
         saved_model_path = f"{paths['HIVE_DIR_PATH']}/{ckpt}/saved_model"
-        
+        ious = list()
         model_fn = tf.saved_model.load(saved_model_path)
         for ip in img_paths:
             basename = os.path.basename(ip)
             detections = validate.get_detections(model_fn, ip)
             thresholds = list([0.1, 0.3, threshold])
             threshold_imgs = list()
+            img = cv2.imread(ip, 3)
             
             for t in thresholds:
                 img_detections = validate.get_processed_image(detections, paths['HIVE_DIR_LABELS'], ip, t)
@@ -225,8 +226,27 @@ class Hive:
             for score in detections['detection_scores']:
                 if score > threshold:
                     true_detections_count += 1
-
-            img = cv2.imread(ip, 3)
+            
+            iou_score = None    
+            if eval_mapping and eval_mapping[basename]:
+                detected_boxes = list()
+                
+                for i in range(len(detections['detection_boxes'])):
+                    if detections['detection_scores'][i] >= threshold:
+                        box = tuple(detections['detection_boxes'][i].tolist())
+                        ymin, xmin, ymax, xmax = box
+                        h, w, c = img.shape
+                        detected_boxes.append((xmin * w, ymin * h, xmax * w, ymax * h))
+                        
+                iou_scores = iou.calculate_iou_for_all_detections(detected_boxes, eval_mapping[basename])
+                iou_score = 0
+                for score in iou_scores:
+                    if score > 0:
+                        iou_score = iou_score + (score / len(iou_scores))
+                        
+            if iou_score is not None:
+                ious.append(iou_score)
+            print(f"{basename} - IoU: {round(iou_score, 2)}")
             b,g,r = cv2.split(img)           # get b, g, r
             rgb_img = cv2.merge([r,g,b])     # switch it to r, g, b
 
@@ -255,9 +275,14 @@ class Hive:
             fig.add_subplot(rows, columns, 4)
             plt.imshow(threshold_imgs[len(threshold_imgs) - 1])
             plt.axis('off')
-            plt.title(f"{true_detections_count} Detections")
+            plt.title(f"{threshold}: {true_detections_count} Detections. IoU: {round(iou_score, 2)}")
             plt.savefig(f"{out_dir}/{ckpt}--{basename}.png")
             plt.close()
+        # print(f"Global IoUs: {ious}")
+        iou_value = 0
+        for i in ious:
+            iou_value = iou_value + i / len(ious)
+        print(f"Global IoUs: {iou_value}")
 
     def evaluate(self):
         paths = self.fs.get_paths()

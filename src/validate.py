@@ -17,7 +17,6 @@ def get_detections(detect_fn, input_img_path):
     }
     detections['num_detections'] = num_detections
     detections['detection_classes'] = detections['detection_classes'].astype(np.int64)
-    print(f"Detections: {num_detections}")
     
     return detections
 

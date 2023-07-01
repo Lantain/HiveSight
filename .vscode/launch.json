@@ -35,7 +35,8 @@
                 "--hive=${input:hive}",
                 "--out=${input:out}",
                 "--imgs_dir=D:/PhD/bigbees/res9_eval",
-                "--threshold=.4"
+                "--threshold=.5",
+                "--eval_remo=./eval.json"
             ],
             "justMyCode": true   
         },

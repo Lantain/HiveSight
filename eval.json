@@ -1,0 +1,5867 @@
+[
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 779,
+          "xmin": 576,
+          "ymax": 812,
+          "ymin": 713
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "1_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1212,
+          "xmin": 1071,
+          "ymax": 326,
+          "ymin": 126
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1301,
+          "xmin": 1162,
+          "ymax": 295,
+          "ymin": 78
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1284,
+          "xmin": 1049,
+          "ymax": 424,
+          "ymin": 296
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1073,
+          "xmin": 893,
+          "ymax": 332,
+          "ymin": 139
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1326,
+          "xmin": 1224,
+          "ymax": 660,
+          "ymin": 426
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1232,
+          "xmin": 1007,
+          "ymax": 562,
+          "ymin": 459
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1263,
+          "xmin": 1027,
+          "ymax": 1015,
+          "ymin": 881
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 996,
+          "xmin": 877,
+          "ymax": 795,
+          "ymin": 538
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "8_bees (2).jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 274,
+          "xmin": 194,
+          "ymax": 796,
+          "ymin": 623
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 79,
+          "xmin": 0,
+          "ymax": 296,
+          "ymin": 111
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 927,
+          "xmin": 839,
+          "ymax": 422,
+          "ymin": 277
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 423,
+          "xmin": 275,
+          "ymax": 945,
+          "ymin": 865
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 274,
+          "xmin": 113,
+          "ymax": 879,
+          "ymin": 796
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 258,
+          "xmin": 75,
+          "ymax": 73,
+          "ymin": 9
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 232,
+          "xmin": 60,
+          "ymax": 435,
+          "ymin": 369
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 849,
+          "xmin": 746,
+          "ymax": 370,
+          "ymin": 221
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 631,
+          "xmin": 522,
+          "ymax": 217,
+          "ymin": 80
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 713,
+          "xmin": 602,
+          "ymax": 564,
+          "ymin": 454
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 391,
+          "xmin": 253,
+          "ymax": 519,
+          "ymin": 443
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 385,
+          "xmin": 269,
+          "ymax": 645,
+          "ymin": 521
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 386,
+          "xmin": 310,
+          "ymax": 832,
+          "ymin": 674
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 563,
+          "xmin": 476,
+          "ymax": 1011,
+          "ymin": 845
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 660,
+          "xmin": 559,
+          "ymax": 816,
+          "ymin": 695
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 731,
+          "xmin": 558,
+          "ymax": 692,
+          "ymin": 611
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 736,
+          "xmin": 658,
+          "ymax": 854,
+          "ymin": 695
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 857,
+          "xmin": 721,
+          "ymax": 977,
+          "ymin": 851
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1146,
+          "xmin": 987,
+          "ymax": 952,
+          "ymin": 862
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1213,
+          "xmin": 1090,
+          "ymax": 764,
+          "ymin": 606
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1369,
+          "xmin": 1298,
+          "ymax": 739,
+          "ymin": 561
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1003,
+          "xmin": 882,
+          "ymax": 828,
+          "ymin": 684
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 936,
+          "xmin": 827,
+          "ymax": 851,
+          "ymin": 686
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1066,
+          "xmin": 927,
+          "ymax": 752,
+          "ymin": 630
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1262,
+          "xmin": 1113,
+          "ymax": 604,
+          "ymin": 517
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1059,
+          "xmin": 966,
+          "ymax": 600,
+          "ymin": 463
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 981,
+          "xmin": 924,
+          "ymax": 569,
+          "ymin": 403
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 918,
+          "xmin": 814,
+          "ymax": 221,
+          "ymin": 48
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1208,
+          "xmin": 1063,
+          "ymax": 430,
+          "ymin": 345
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 332,
+          "xmin": 234,
+          "ymax": 212,
+          "ymin": 74
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 707,
+          "xmin": 543,
+          "ymax": 345,
+          "ymin": 253
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1265,
+          "xmin": 1174,
+          "ymax": 500,
+          "ymin": 356
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 878,
+          "xmin": 755,
+          "ymax": 555,
+          "ymin": 411
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 544,
+          "xmin": 393,
+          "ymax": 402,
+          "ymin": 307
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1120,
+          "xmin": 1012,
+          "ymax": 305,
+          "ymin": 174
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 523,
+          "xmin": 450,
+          "ymax": 167,
+          "ymin": 10
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1074,
+          "xmin": 992,
+          "ymax": 437,
+          "ymin": 277
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1034,
+          "xmin": 900,
+          "ymax": 142,
+          "ymin": 4
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1127,
+          "xmin": 1056,
+          "ymax": 191,
+          "ymin": 19
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 860,
+          "xmin": 728,
+          "ymax": 232,
+          "ymin": 100
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 493,
+          "xmin": 387,
+          "ymax": 649,
+          "ymin": 504
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 999,
+          "xmin": 923,
+          "ymax": 378,
+          "ymin": 215
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 773,
+          "xmin": 601,
+          "ymax": 453,
+          "ymin": 371
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 931,
+          "xmin": 852,
+          "ymax": 613,
+          "ymin": 460
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 831,
+          "xmin": 737,
+          "ymax": 706,
+          "ymin": 551
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 370,
+          "xmin": 282,
+          "ymax": 406,
+          "ymin": 237
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 553,
+          "xmin": 488,
+          "ymax": 318,
+          "ymin": 156
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1288,
+          "xmin": 1201,
+          "ymax": 321,
+          "ymin": 139
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "50_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 916,
+          "xmin": 751,
+          "ymax": 950,
+          "ymin": 850
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 160,
+          "xmin": 23,
+          "ymax": 734,
+          "ymin": 604
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 318,
+          "xmin": 216,
+          "ymax": 365,
+          "ymin": 213
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 358,
+          "xmin": 288,
+          "ymax": 509,
+          "ymin": 358
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 444,
+          "xmin": 330,
+          "ymax": 962,
+          "ymin": 808
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 707,
+          "xmin": 626,
+          "ymax": 1027,
+          "ymin": 848
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 597,
+          "xmin": 512,
+          "ymax": 1032,
+          "ymin": 856
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 507,
+          "xmin": 444,
+          "ymax": 1030,
+          "ymin": 866
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 347,
+          "xmin": 233,
+          "ymax": 1015,
+          "ymin": 870
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 527,
+          "xmin": 358,
+          "ymax": 849,
+          "ymin": 770
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 378,
+          "xmin": 203,
+          "ymax": 797,
+          "ymin": 726
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 219,
+          "xmin": 115,
+          "ymax": 702,
+          "ymin": 572
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 561,
+          "xmin": 398,
+          "ymax": 760,
+          "ymin": 687
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 371,
+          "xmin": 209,
+          "ymax": 691,
+          "ymin": 592
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 569,
+          "xmin": 395,
+          "ymax": 672,
+          "ymin": 605
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 490,
+          "xmin": 316,
+          "ymax": 589,
+          "ymin": 505
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 274,
+          "xmin": 112,
+          "ymax": 568,
+          "ymin": 493
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 191,
+          "xmin": 10,
+          "ymax": 521,
+          "ymin": 439
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 233,
+          "xmin": 104,
+          "ymax": 359,
+          "ymin": 257
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 294,
+          "xmin": 210,
+          "ymax": 517,
+          "ymin": 350
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 193,
+          "xmin": 62,
+          "ymax": 246,
+          "ymin": 102
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 652,
+          "xmin": 526,
+          "ymax": 475,
+          "ymin": 334
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 488,
+          "xmin": 347,
+          "ymax": 446,
+          "ymin": 305
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 357,
+          "xmin": 247,
+          "ymax": 238,
+          "ymin": 88
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 449,
+          "xmin": 348,
+          "ymax": 302,
+          "ymin": 143
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 583,
+          "xmin": 479,
+          "ymax": 211,
+          "ymin": 26
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 814,
+          "xmin": 707,
+          "ymax": 914,
+          "ymin": 764
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 775,
+          "xmin": 641,
+          "ymax": 846,
+          "ymin": 720
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 665,
+          "xmin": 574,
+          "ymax": 807,
+          "ymin": 622
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 575,
+          "xmin": 487,
+          "ymax": 618,
+          "ymin": 449
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 720,
+          "xmin": 588,
+          "ymax": 600,
+          "ymin": 472
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 725,
+          "xmin": 653,
+          "ymax": 743,
+          "ymin": 566
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 801,
+          "xmin": 722,
+          "ymax": 707,
+          "ymin": 554
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 857,
+          "xmin": 782,
+          "ymax": 749,
+          "ymin": 579
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 972,
+          "xmin": 815,
+          "ymax": 807,
+          "ymin": 705
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 981,
+          "xmin": 898,
+          "ymax": 939,
+          "ymin": 780
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1142,
+          "xmin": 966,
+          "ymax": 978,
+          "ymin": 880
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1173,
+          "xmin": 989,
+          "ymax": 864,
+          "ymin": 791
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1084,
+          "xmin": 1008,
+          "ymax": 786,
+          "ymin": 603
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1004,
+          "xmin": 849,
+          "ymax": 676,
+          "ymin": 576
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1163,
+          "xmin": 1076,
+          "ymax": 731,
+          "ymin": 553
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1338,
+          "xmin": 1170,
+          "ymax": 940,
+          "ymin": 874
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1373,
+          "xmin": 1269,
+          "ymax": 846,
+          "ymin": 697
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1279,
+          "xmin": 1162,
+          "ymax": 809,
+          "ymin": 667
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1245,
+          "xmin": 1166,
+          "ymax": 677,
+          "ymin": 532
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1370,
+          "xmin": 1244,
+          "ymax": 611,
+          "ymin": 489
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1225,
+          "xmin": 1098,
+          "ymax": 316,
+          "ymin": 212
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1324,
+          "xmin": 1191,
+          "ymax": 451,
+          "ymin": 317
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1202,
+          "xmin": 1106,
+          "ymax": 469,
+          "ymin": 316
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1123,
+          "xmin": 1017,
+          "ymax": 491,
+          "ymin": 345
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1158,
+          "xmin": 997,
+          "ymax": 564,
+          "ymin": 475
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1025,
+          "xmin": 922,
+          "ymax": 560,
+          "ymin": 402
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1319,
+          "xmin": 1174,
+          "ymax": 334,
+          "ymin": 238
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 676,
+          "xmin": 585,
+          "ymax": 193,
+          "ymin": 40
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 760,
+          "xmin": 676,
+          "ymax": 167,
+          "ymin": 14
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 877,
+          "xmin": 756,
+          "ymax": 161,
+          "ymin": 11
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 778,
+          "xmin": 619,
+          "ymax": 270,
+          "ymin": 173
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 946,
+          "xmin": 809,
+          "ymax": 322,
+          "ymin": 244
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 815,
+          "xmin": 653,
+          "ymax": 326,
+          "ymin": 221
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 762,
+          "xmin": 640,
+          "ymax": 473,
+          "ymin": 327
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 912,
+          "xmin": 784,
+          "ymax": 555,
+          "ymin": 383
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1005,
+          "xmin": 836,
+          "ymax": 412,
+          "ymin": 321
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1091,
+          "xmin": 948,
+          "ymax": 320,
+          "ymin": 178
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1122,
+          "xmin": 985,
+          "ymax": 256,
+          "ymin": 137
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 970,
+          "xmin": 848,
+          "ymax": 252,
+          "ymin": 79
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1110,
+          "xmin": 963,
+          "ymax": 121,
+          "ymin": 5
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1185,
+          "xmin": 1087,
+          "ymax": 196,
+          "ymin": 40
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1279,
+          "xmin": 1208,
+          "ymax": 255,
+          "ymin": 83
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "71_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 711,
+          "xmin": 618,
+          "ymax": 688,
+          "ymin": 515
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1294,
+          "xmin": 1145,
+          "ymax": 98,
+          "ymin": 28
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1321,
+          "xmin": 1166,
+          "ymax": 188,
+          "ymin": 84
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1346,
+          "xmin": 1189,
+          "ymax": 331,
+          "ymin": 268
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1353,
+          "xmin": 1179,
+          "ymax": 272,
+          "ymin": 185
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1138,
+          "xmin": 1037,
+          "ymax": 374,
+          "ymin": 221
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1198,
+          "xmin": 1112,
+          "ymax": 427,
+          "ymin": 286
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1286,
+          "xmin": 1189,
+          "ymax": 466,
+          "ymin": 319
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1355,
+          "xmin": 1215,
+          "ymax": 614,
+          "ymin": 486
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1211,
+          "xmin": 1126,
+          "ymax": 554,
+          "ymin": 410
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1127,
+          "xmin": 974,
+          "ymax": 478,
+          "ymin": 381
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1316,
+          "xmin": 1224,
+          "ymax": 878,
+          "ymin": 725
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 496,
+          "xmin": 413,
+          "ymax": 628,
+          "ymin": 478
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 986,
+          "xmin": 900,
+          "ymax": 698,
+          "ymin": 524
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 917,
+          "xmin": 813,
+          "ymax": 720,
+          "ymin": 553
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1099,
+          "xmin": 1022,
+          "ymax": 747,
+          "ymin": 588
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1200,
+          "xmin": 1122,
+          "ymax": 726,
+          "ymin": 562
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1348,
+          "xmin": 1204,
+          "ymax": 740,
+          "ymin": 652
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1236,
+          "xmin": 1153,
+          "ymax": 920,
+          "ymin": 749
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1146,
+          "xmin": 1043,
+          "ymax": 932,
+          "ymin": 773
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1035,
+          "xmin": 959,
+          "ymax": 869,
+          "ymin": 706
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 894,
+          "xmin": 774,
+          "ymax": 873,
+          "ymin": 719
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 963,
+          "xmin": 765,
+          "ymax": 996,
+          "ymin": 904
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1324,
+          "xmin": 1206,
+          "ymax": 996,
+          "ymin": 839
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1228,
+          "xmin": 1062,
+          "ymax": 1012,
+          "ymin": 916
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 810,
+          "xmin": 692,
+          "ymax": 725,
+          "ymin": 584
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 798,
+          "xmin": 670,
+          "ymax": 889,
+          "ymin": 757
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 638,
+          "xmin": 551,
+          "ymax": 950,
+          "ymin": 783
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 549,
+          "xmin": 489,
+          "ymax": 1030,
+          "ymin": 871
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 484,
+          "xmin": 336,
+          "ymax": 973,
+          "ymin": 895
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 491,
+          "xmin": 334,
+          "ymax": 1023,
+          "ymin": 950
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 653,
+          "xmin": 474,
+          "ymax": 829,
+          "ymin": 725
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 484,
+          "xmin": 338,
+          "ymax": 737,
+          "ymin": 653
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 414,
+          "xmin": 308,
+          "ymax": 836,
+          "ymin": 734
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 211,
+          "xmin": 127,
+          "ymax": 694,
+          "ymin": 544
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 332,
+          "xmin": 258,
+          "ymax": 936,
+          "ymin": 797
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 170,
+          "xmin": 4,
+          "ymax": 840,
+          "ymin": 725
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 299,
+          "xmin": 125,
+          "ymax": 792,
+          "ymin": 711
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 897,
+          "xmin": 746,
+          "ymax": 372,
+          "ymin": 274
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 944,
+          "xmin": 866,
+          "ymax": 552,
+          "ymin": 387
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 872,
+          "xmin": 705,
+          "ymax": 431,
+          "ymin": 316
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 730,
+          "xmin": 583,
+          "ymax": 323,
+          "ymin": 247
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 654,
+          "xmin": 493,
+          "ymax": 448,
+          "ymin": 372
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 580,
+          "xmin": 490,
+          "ymax": 672,
+          "ymin": 537
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 403,
+          "xmin": 236,
+          "ymax": 653,
+          "ymin": 575
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 240,
+          "xmin": 174,
+          "ymax": 613,
+          "ymin": 449
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 378,
+          "xmin": 249,
+          "ymax": 560,
+          "ymin": 415
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 487,
+          "xmin": 380,
+          "ymax": 519,
+          "ymin": 361
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 430,
+          "xmin": 348,
+          "ymax": 399,
+          "ymin": 248
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 353,
+          "xmin": 211,
+          "ymax": 456,
+          "ymin": 339
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 195,
+          "xmin": 46,
+          "ymax": 491,
+          "ymin": 380
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1170,
+          "xmin": 998,
+          "ymax": 172,
+          "ymin": 98
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1087,
+          "xmin": 953,
+          "ymax": 289,
+          "ymin": 188
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 962,
+          "xmin": 808,
+          "ymax": 258,
+          "ymin": 167
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 812,
+          "xmin": 646,
+          "ymax": 263,
+          "ymin": 184
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 902,
+          "xmin": 737,
+          "ymax": 196,
+          "ymin": 107
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 684,
+          "xmin": 552,
+          "ymax": 119,
+          "ymin": 43
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 808,
+          "xmin": 654,
+          "ymax": 153,
+          "ymin": 94
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 619,
+          "xmin": 502,
+          "ymax": 250,
+          "ymin": 115
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 497,
+          "xmin": 368,
+          "ymax": 297,
+          "ymin": 162
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 551,
+          "xmin": 436,
+          "ymax": 271,
+          "ymin": 131
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 376,
+          "xmin": 218,
+          "ymax": 283,
+          "ymin": 210
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 347,
+          "xmin": 243,
+          "ymax": 216,
+          "ymin": 96
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 436,
+          "xmin": 307,
+          "ymax": 133,
+          "ymin": 17
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 187,
+          "xmin": 56,
+          "ymax": 305,
+          "ymin": 167
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 215,
+          "xmin": 123,
+          "ymax": 159,
+          "ymin": 4
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "57_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 735,
+          "xmin": 586,
+          "ymax": 742,
+          "ymin": 619
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 431,
+          "xmin": 273,
+          "ymax": 1032,
+          "ymin": 960
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 481,
+          "xmin": 367,
+          "ymax": 605,
+          "ymin": 493
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 557,
+          "xmin": 455,
+          "ymax": 833,
+          "ymin": 694
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 338,
+          "xmin": 222,
+          "ymax": 893,
+          "ymin": 766
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 207,
+          "xmin": 140,
+          "ymax": 916,
+          "ymin": 777
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 252,
+          "xmin": 100,
+          "ymax": 994,
+          "ymin": 929
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 146,
+          "xmin": 1,
+          "ymax": 889,
+          "ymin": 812
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 303,
+          "xmin": 161,
+          "ymax": 792,
+          "ymin": 717
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 153,
+          "xmin": 30,
+          "ymax": 806,
+          "ymin": 708
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 171,
+          "xmin": 42,
+          "ymax": 591,
+          "ymin": 471
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 403,
+          "xmin": 325,
+          "ymax": 798,
+          "ymin": 668
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1136,
+          "xmin": 986,
+          "ymax": 590,
+          "ymin": 505
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1288,
+          "xmin": 1178,
+          "ymax": 642,
+          "ymin": 500
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 530,
+          "xmin": 405,
+          "ymax": 934,
+          "ymin": 831
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1161,
+          "xmin": 997,
+          "ymax": 1006,
+          "ymin": 930
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 834,
+          "xmin": 746,
+          "ymax": 1001,
+          "ymin": 839
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1000,
+          "xmin": 902,
+          "ymax": 1032,
+          "ymin": 898
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 855,
+          "xmin": 751,
+          "ymax": 827,
+          "ymin": 692
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1349,
+          "xmin": 1178,
+          "ymax": 1017,
+          "ymin": 943
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1339,
+          "xmin": 1178,
+          "ymax": 944,
+          "ymin": 873
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 683,
+          "xmin": 617,
+          "ymax": 953,
+          "ymin": 808
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 539,
+          "xmin": 407,
+          "ymax": 751,
+          "ymin": 647
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 995,
+          "xmin": 839,
+          "ymax": 518,
+          "ymin": 446
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 973,
+          "xmin": 834,
+          "ymax": 707,
+          "ymin": 583
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 859,
+          "xmin": 738,
+          "ymax": 643,
+          "ymin": 539
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 420,
+          "xmin": 344,
+          "ymax": 569,
+          "ymin": 427
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 618,
+          "xmin": 479,
+          "ymax": 608,
+          "ymin": 528
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 260,
+          "xmin": 129,
+          "ymax": 681,
+          "ymin": 568
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 338,
+          "xmin": 178,
+          "ymax": 712,
+          "ymin": 654
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 311,
+          "xmin": 151,
+          "ymax": 566,
+          "ymin": 508
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 299,
+          "xmin": 185,
+          "ymax": 510,
+          "ymin": 402
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 636,
+          "xmin": 484,
+          "ymax": 512,
+          "ymin": 434
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 730,
+          "xmin": 617,
+          "ymax": 549,
+          "ymin": 434
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 439,
+          "xmin": 279,
+          "ymax": 265,
+          "ymin": 166
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "39_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1371,
+          "xmin": 1232,
+          "ymax": 272,
+          "ymin": 52
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 236,
+          "xmin": 32,
+          "ymax": 199,
+          "ymin": 32
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 481,
+          "xmin": 308,
+          "ymax": 954,
+          "ymin": 737
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1333,
+          "xmin": 1057,
+          "ymax": 815,
+          "ymin": 687
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 732,
+          "xmin": 530,
+          "ymax": 1015,
+          "ymin": 802
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 314,
+          "xmin": 93,
+          "ymax": 1022,
+          "ymin": 835
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 582,
+          "xmin": 393,
+          "ymax": 962,
+          "ymin": 777
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 683,
+          "xmin": 487,
+          "ymax": 807,
+          "ymin": 625
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 921,
+          "xmin": 744,
+          "ymax": 1019,
+          "ymin": 797
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1213,
+          "xmin": 1049,
+          "ymax": 1027,
+          "ymin": 776
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1313,
+          "xmin": 1082,
+          "ymax": 667,
+          "ymin": 496
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1371,
+          "xmin": 1157,
+          "ymax": 495,
+          "ymin": 285
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1120,
+          "xmin": 906,
+          "ymax": 367,
+          "ymin": 159
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1123,
+          "xmin": 896,
+          "ymax": 207,
+          "ymin": 82
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1232,
+          "xmin": 1101,
+          "ymax": 384,
+          "ymin": 154
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 932,
+          "xmin": 927,
+          "ymax": 645,
+          "ymin": 643
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1056,
+          "xmin": 938,
+          "ymax": 771,
+          "ymin": 526
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 256,
+          "xmin": 20,
+          "ymax": 318,
+          "ymin": 167
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 285,
+          "xmin": 35,
+          "ymax": 413,
+          "ymin": 301
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 479,
+          "xmin": 235,
+          "ymax": 332,
+          "ymin": 176
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 270,
+          "xmin": 96,
+          "ymax": 609,
+          "ymin": 459
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 334,
+          "xmin": 149,
+          "ymax": 776,
+          "ymin": 556
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 574,
+          "xmin": 448,
+          "ymax": 521,
+          "ymin": 260
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 657,
+          "xmin": 456,
+          "ymax": 335,
+          "ymin": 157
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 799,
+          "xmin": 576,
+          "ymax": 289,
+          "ymin": 107
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1002,
+          "xmin": 732,
+          "ymax": 459,
+          "ymin": 285
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 863,
+          "xmin": 640,
+          "ymax": 512,
+          "ymin": 354
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "24_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1350,
+          "xmin": 1243,
+          "ymax": 160,
+          "ymin": 7
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1250,
+          "xmin": 1150,
+          "ymax": 1032,
+          "ymin": 881
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1338,
+          "xmin": 1182,
+          "ymax": 866,
+          "ymin": 764
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 536,
+          "xmin": 374,
+          "ymax": 1027,
+          "ymin": 949
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 184,
+          "xmin": 68,
+          "ymax": 696,
+          "ymin": 549
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 217,
+          "xmin": 143,
+          "ymax": 831,
+          "ymin": 664
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 143,
+          "xmin": 80,
+          "ymax": 845,
+          "ymin": 686
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 167,
+          "xmin": 86,
+          "ymax": 1029,
+          "ymin": 891
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 206,
+          "xmin": 116,
+          "ymax": 992,
+          "ymin": 834
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 385,
+          "xmin": 252,
+          "ymax": 884,
+          "ymin": 748
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 492,
+          "xmin": 406,
+          "ymax": 945,
+          "ymin": 798
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 680,
+          "xmin": 538,
+          "ymax": 978,
+          "ymin": 847
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 808,
+          "xmin": 691,
+          "ymax": 966,
+          "ymin": 827
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1025,
+          "xmin": 881,
+          "ymax": 958,
+          "ymin": 849
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1134,
+          "xmin": 1062,
+          "ymax": 969,
+          "ymin": 804
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1300,
+          "xmin": 1134,
+          "ymax": 796,
+          "ymin": 727
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1202,
+          "xmin": 1067,
+          "ymax": 768,
+          "ymin": 625
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1373,
+          "xmin": 1253,
+          "ymax": 628,
+          "ymin": 487
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1374,
+          "xmin": 1231,
+          "ymax": 450,
+          "ymin": 340
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 288,
+          "xmin": 197,
+          "ymax": 607,
+          "ymin": 465
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 269,
+          "xmin": 178,
+          "ymax": 749,
+          "ymin": 595
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 389,
+          "xmin": 317,
+          "ymax": 706,
+          "ymin": 567
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 563,
+          "xmin": 471,
+          "ymax": 764,
+          "ymin": 601
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 473,
+          "xmin": 413,
+          "ymax": 765,
+          "ymin": 597
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 657,
+          "xmin": 496,
+          "ymax": 805,
+          "ymin": 733
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 727,
+          "xmin": 628,
+          "ymax": 751,
+          "ymin": 604
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 773,
+          "xmin": 649,
+          "ymax": 844,
+          "ymin": 691
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 875,
+          "xmin": 719,
+          "ymax": 837,
+          "ymin": 747
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 526,
+          "xmin": 425,
+          "ymax": 603,
+          "ymin": 460
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 377,
+          "xmin": 290,
+          "ymax": 598,
+          "ymin": 466
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 94,
+          "xmin": 29,
+          "ymax": 572,
+          "ymin": 393
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 239,
+          "xmin": 99,
+          "ymax": 454,
+          "ymin": 326
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 243,
+          "xmin": 105,
+          "ymax": 521,
+          "ymin": 434
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 490,
+          "xmin": 339,
+          "ymax": 458,
+          "ymin": 361
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 300,
+          "xmin": 199,
+          "ymax": 418,
+          "ymin": 257
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 506,
+          "xmin": 436,
+          "ymax": 409,
+          "ymin": 245
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 612,
+          "xmin": 500,
+          "ymax": 442,
+          "ymin": 314
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1301,
+          "xmin": 1133,
+          "ymax": 629,
+          "ymin": 551
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1128,
+          "xmin": 993,
+          "ymax": 686,
+          "ymin": 562
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1001,
+          "xmin": 920,
+          "ymax": 728,
+          "ymin": 572
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 918,
+          "xmin": 843,
+          "ymax": 757,
+          "ymin": 578
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 612,
+          "xmin": 533,
+          "ymax": 600,
+          "ymin": 442
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 743,
+          "xmin": 644,
+          "ymax": 616,
+          "ymin": 477
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 826,
+          "xmin": 727,
+          "ymax": 695,
+          "ymin": 543
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 860,
+          "xmin": 748,
+          "ymax": 551,
+          "ymin": 402
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 775,
+          "xmin": 696,
+          "ymax": 479,
+          "ymin": 344
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 715,
+          "xmin": 628,
+          "ymax": 445,
+          "ymin": 283
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 988,
+          "xmin": 865,
+          "ymax": 523,
+          "ymin": 367
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1112,
+          "xmin": 1010,
+          "ymax": 580,
+          "ymin": 431
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1222,
+          "xmin": 1119,
+          "ymax": 585,
+          "ymin": 432
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1170,
+          "xmin": 1023,
+          "ymax": 445,
+          "ymin": 335
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1299,
+          "xmin": 1183,
+          "ymax": 405,
+          "ymin": 252
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 651,
+          "xmin": 507,
+          "ymax": 332,
+          "ymin": 226
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 351,
+          "xmin": 232,
+          "ymax": 229,
+          "ymin": 82
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 688,
+          "xmin": 565,
+          "ymax": 185,
+          "ymin": 15
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1188,
+          "xmin": 1052,
+          "ymax": 362,
+          "ymin": 274
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "53_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 926,
+          "xmin": 820,
+          "ymax": 354,
+          "ymin": 69
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 843,
+          "xmin": 650,
+          "ymax": 976,
+          "ymin": 736
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 992,
+          "xmin": 842,
+          "ymax": 913,
+          "ymin": 651
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 876,
+          "xmin": 663,
+          "ymax": 605,
+          "ymin": 370
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1057,
+          "xmin": 891,
+          "ymax": 540,
+          "ymin": 269
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1368,
+          "xmin": 1151,
+          "ymax": 304,
+          "ymin": 9
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1133,
+          "xmin": 1009,
+          "ymax": 297,
+          "ymin": 47
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 842,
+          "xmin": 550,
+          "ymax": 277,
+          "ymin": 163
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 337,
+          "xmin": 50,
+          "ymax": 262,
+          "ymin": 145
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1316,
+          "xmin": 1021,
+          "ymax": 710,
+          "ymin": 523
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 956,
+          "xmin": 678,
+          "ymax": 690,
+          "ymin": 551
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 289,
+          "xmin": 53,
+          "ymax": 884,
+          "ymin": 628
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 393,
+          "xmin": 134,
+          "ymax": 788,
+          "ymin": 534
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 557,
+          "xmin": 379,
+          "ymax": 642,
+          "ymin": 357
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 415,
+          "xmin": 179,
+          "ymax": 468,
+          "ymin": 237
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "16_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1041,
+          "xmin": 842,
+          "ymax": 970,
+          "ymin": 844
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 880,
+          "xmin": 738,
+          "ymax": 799,
+          "ymin": 630
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 956,
+          "xmin": 826,
+          "ymax": 549,
+          "ymin": 364
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 862,
+          "xmin": 709,
+          "ymax": 1032,
+          "ymin": 849
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1213,
+          "xmin": 1004,
+          "ymax": 1006,
+          "ymin": 872
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1221,
+          "xmin": 1038,
+          "ymax": 891,
+          "ymin": 752
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1059,
+          "xmin": 907,
+          "ymax": 762,
+          "ymin": 576
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1281,
+          "xmin": 1099,
+          "ymax": 743,
+          "ymin": 545
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 578,
+          "xmin": 432,
+          "ymax": 788,
+          "ymin": 585
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1049,
+          "xmin": 874,
+          "ymax": 463,
+          "ymin": 339
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1095,
+          "xmin": 870,
+          "ymax": 328,
+          "ymin": 243
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1291,
+          "xmin": 1087,
+          "ymax": 526,
+          "ymin": 435
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1366,
+          "xmin": 1170,
+          "ymax": 438,
+          "ymin": 360
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1356,
+          "xmin": 1160,
+          "ymax": 351,
+          "ymin": 195
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "16_bees (2).jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 375,
+          "xmin": 170,
+          "ymax": 445,
+          "ymin": 290
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 431,
+          "xmin": 206,
+          "ymax": 356,
+          "ymin": 218
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 441,
+          "xmin": 312,
+          "ymax": 620,
+          "ymin": 415
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 601,
+          "xmin": 403,
+          "ymax": 573,
+          "ymin": 407
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 978,
+          "xmin": 806,
+          "ymax": 286,
+          "ymin": 73
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 806,
+          "xmin": 606,
+          "ymax": 237,
+          "ymin": 112
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 906,
+          "xmin": 717,
+          "ymax": 375,
+          "ymin": 181
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1290,
+          "xmin": 1058,
+          "ymax": 733,
+          "ymin": 624
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1181,
+          "xmin": 972,
+          "ymax": 972,
+          "ymin": 755
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1000,
+          "xmin": 769,
+          "ymax": 1027,
+          "ymin": 867
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 481,
+          "xmin": 345,
+          "ymax": 946,
+          "ymin": 702
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 161,
+          "xmin": 0,
+          "ymax": 533,
+          "ymin": 340
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 587,
+          "xmin": 373,
+          "ymax": 691,
+          "ymin": 530
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 628,
+          "xmin": 446,
+          "ymax": 783,
+          "ymin": 605
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 687,
+          "xmin": 526,
+          "ymax": 871,
+          "ymin": 658
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 774,
+          "xmin": 659,
+          "ymax": 980,
+          "ymin": 744
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 951,
+          "xmin": 763,
+          "ymax": 827,
+          "ymin": 696
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 870,
+          "xmin": 720,
+          "ymax": 758,
+          "ymin": 516
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 826,
+          "xmin": 626,
+          "ymax": 615,
+          "ymin": 411
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 792,
+          "xmin": 588,
+          "ymax": 488,
+          "ymin": 296
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 995,
+          "xmin": 832,
+          "ymax": 497,
+          "ymin": 291
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1281,
+          "xmin": 1063,
+          "ymax": 413,
+          "ymin": 190
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1059,
+          "xmin": 832,
+          "ymax": 115,
+          "ymin": 0
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 738,
+          "xmin": 506,
+          "ymax": 132,
+          "ymin": 20
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 324,
+          "xmin": 193,
+          "ymax": 201,
+          "ymin": 4
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 510,
+          "xmin": 303,
+          "ymax": 182,
+          "ymin": 14
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 613,
+          "xmin": 434,
+          "ymax": 317,
+          "ymin": 129
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 359,
+          "xmin": 221,
+          "ymax": 760,
+          "ymin": 523
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 232,
+          "xmin": 126,
+          "ymax": 845,
+          "ymin": 571
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 185,
+          "xmin": 78,
+          "ymax": 393,
+          "ymin": 157
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "33_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 696,
+          "xmin": 475,
+          "ymax": 459,
+          "ymin": 377
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1096,
+          "xmin": 850,
+          "ymax": 985,
+          "ymin": 863
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 901,
+          "xmin": 677,
+          "ymax": 970,
+          "ymin": 822
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 638,
+          "xmin": 429,
+          "ymax": 954,
+          "ymin": 761
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1068,
+          "xmin": 836,
+          "ymax": 808,
+          "ymin": 696
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "5_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 201,
+          "xmin": 2,
+          "ymax": 634,
+          "ymin": 199
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1232,
+          "xmin": 1038,
+          "ymax": 406,
+          "ymin": 7
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 430,
+          "xmin": 218,
+          "ymax": 465,
+          "ymin": 4
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 711,
+          "xmin": 246,
+          "ymax": 854,
+          "ymin": 566
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1291,
+          "xmin": 1074,
+          "ymax": 850,
+          "ymin": 398
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 757,
+          "xmin": 470,
+          "ymax": 426,
+          "ymin": 45
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "5_bees (2).jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1227,
+          "xmin": 1134,
+          "ymax": 995,
+          "ymin": 796
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 957,
+          "xmin": 804,
+          "ymax": 882,
+          "ymin": 726
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1046,
+          "xmin": 881,
+          "ymax": 899,
+          "ymin": 765
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1240,
+          "xmin": 1049,
+          "ymax": 762,
+          "ymin": 649
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 776,
+          "xmin": 595,
+          "ymax": 887,
+          "ymin": 802
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "10_bees (2).jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1356,
+          "xmin": 1176,
+          "ymax": 580,
+          "ymin": 271
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1254,
+          "xmin": 1095,
+          "ymax": 731,
+          "ymin": 442
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 225,
+          "xmin": 85,
+          "ymax": 917,
+          "ymin": 580
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1021,
+          "xmin": 731,
+          "ymax": 1015,
+          "ymin": 771
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 896,
+          "xmin": 628,
+          "ymax": 959,
+          "ymin": 714
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 842,
+          "xmin": 568,
+          "ymax": 831,
+          "ymin": 599
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1197,
+          "xmin": 944,
+          "ymax": 465,
+          "ymin": 162
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 929,
+          "xmin": 643,
+          "ymax": 313,
+          "ymin": 79
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "8_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 946,
+          "xmin": 723,
+          "ymax": 1032,
+          "ymin": 923
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1374,
+          "xmin": 1212,
+          "ymax": 899,
+          "ymin": 779
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1176,
+          "xmin": 1026,
+          "ymax": 990,
+          "ymin": 823
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 926,
+          "xmin": 702,
+          "ymax": 915,
+          "ymin": 813
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1012,
+          "xmin": 777,
+          "ymax": 796,
+          "ymin": 679
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1202,
+          "xmin": 982,
+          "ymax": 688,
+          "ymin": 590
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1295,
+          "xmin": 1082,
+          "ymax": 760,
+          "ymin": 628
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1352,
+          "xmin": 1207,
+          "ymax": 656,
+          "ymin": 476
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 970,
+          "xmin": 848,
+          "ymax": 638,
+          "ymin": 440
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1207,
+          "xmin": 982,
+          "ymax": 549,
+          "ymin": 448
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "10_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1328,
+          "xmin": 1197,
+          "ymax": 428,
+          "ymin": 199
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 423,
+          "xmin": 268,
+          "ymax": 703,
+          "ymin": 463
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1214,
+          "xmin": 1032,
+          "ymax": 512,
+          "ymin": 300
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 561,
+          "xmin": 391,
+          "ymax": 461,
+          "ymin": 245
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1286,
+          "xmin": 1044,
+          "ymax": 1032,
+          "ymin": 833
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 309,
+          "xmin": 159,
+          "ymax": 1030,
+          "ymin": 819
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1071,
+          "xmin": 895,
+          "ymax": 284,
+          "ymin": 93
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 388,
+          "xmin": 121,
+          "ymax": 826,
+          "ymin": 695
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 767,
+          "xmin": 540,
+          "ymax": 826,
+          "ymin": 595
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 504,
+          "xmin": 373,
+          "ymax": 970,
+          "ymin": 684
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 584,
+          "xmin": 456,
+          "ymax": 751,
+          "ymin": 476
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1057,
+          "xmin": 896,
+          "ymax": 876,
+          "ymin": 578
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 999,
+          "xmin": 871,
+          "ymax": 592,
+          "ymin": 303
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 701,
+          "xmin": 490,
+          "ymax": 467,
+          "ymin": 243
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 274,
+          "xmin": 28,
+          "ymax": 617,
+          "ymin": 434
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 460,
+          "xmin": 206,
+          "ymax": 476,
+          "ymin": 339
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 426,
+          "xmin": 164,
+          "ymax": 264,
+          "ymin": 142
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 179,
+          "xmin": 28,
+          "ymax": 406,
+          "ymin": 173
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 832,
+          "xmin": 528,
+          "ymax": 201,
+          "ymin": 82
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 426,
+          "xmin": 151,
+          "ymax": 142,
+          "ymin": 20
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "20_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1009,
+          "xmin": 783,
+          "ymax": 936,
+          "ymin": 800
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1203,
+          "xmin": 1077,
+          "ymax": 573,
+          "ymin": 346
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1343,
+          "xmin": 1094,
+          "ymax": 271,
+          "ymin": 172
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1371,
+          "xmin": 1212,
+          "ymax": 724,
+          "ymin": 544
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 785,
+          "xmin": 617,
+          "ymax": 295,
+          "ymin": 142
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 513,
+          "xmin": 332,
+          "ymax": 682,
+          "ymin": 488
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 488,
+          "xmin": 251,
+          "ymax": 924,
+          "ymin": 783
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1087,
+          "xmin": 982,
+          "ymax": 1027,
+          "ymin": 824
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1174,
+          "xmin": 1099,
+          "ymax": 1029,
+          "ymin": 810
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1007,
+          "xmin": 745,
+          "ymax": 214,
+          "ymin": 65
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1299,
+          "xmin": 1141,
+          "ymax": 832,
+          "ymin": 620
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1141,
+          "xmin": 892,
+          "ymax": 796,
+          "ymin": 690
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1132,
+          "xmin": 901,
+          "ymax": 695,
+          "ymin": 538
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1335,
+          "xmin": 1220,
+          "ymax": 551,
+          "ymin": 334
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1070,
+          "xmin": 923,
+          "ymax": 615,
+          "ymin": 404
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1157,
+          "xmin": 931,
+          "ymax": 424,
+          "ymin": 259
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 653,
+          "xmin": 437,
+          "ymax": 918,
+          "ymin": 773
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 860,
+          "xmin": 656,
+          "ymax": 920,
+          "ymin": 724
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 320,
+          "xmin": 70,
+          "ymax": 934,
+          "ymin": 838
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 670,
+          "xmin": 410,
+          "ymax": 770,
+          "ymin": 663
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 748,
+          "xmin": 503,
+          "ymax": 712,
+          "ymin": 582
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 902,
+          "xmin": 785,
+          "ymax": 713,
+          "ymin": 460
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 842,
+          "xmin": 678,
+          "ymax": 609,
+          "ymin": 387
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 696,
+          "xmin": 457,
+          "ymax": 576,
+          "ymin": 437
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 737,
+          "xmin": 507,
+          "ymax": 424,
+          "ymin": 323
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 704,
+          "xmin": 488,
+          "ymax": 278,
+          "ymin": 101
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 434,
+          "xmin": 184,
+          "ymax": 807,
+          "ymin": 663
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 393,
+          "xmin": 232,
+          "ymax": 695,
+          "ymin": 471
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 240,
+          "xmin": 114,
+          "ymax": 610,
+          "ymin": 392
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 413,
+          "xmin": 170,
+          "ymax": 434,
+          "ymin": 303
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 429,
+          "xmin": 187,
+          "ymax": 299,
+          "ymin": 195
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "32_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1200,
+          "xmin": 1118,
+          "ymax": 278,
+          "ymin": 112
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 800,
+          "xmin": 667,
+          "ymax": 425,
+          "ymin": 286
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1366,
+          "xmin": 1260,
+          "ymax": 349,
+          "ymin": 191
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 780,
+          "xmin": 637,
+          "ymax": 751,
+          "ymin": 602
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 843,
+          "xmin": 763,
+          "ymax": 781,
+          "ymin": 595
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 283,
+          "xmin": 106,
+          "ymax": 534,
+          "ymin": 418
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 558,
+          "xmin": 437,
+          "ymax": 461,
+          "ymin": 291
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1138,
+          "xmin": 974,
+          "ymax": 566,
+          "ymin": 443
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1028,
+          "xmin": 936,
+          "ymax": 713,
+          "ymin": 556
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1369,
+          "xmin": 1293,
+          "ymax": 1001,
+          "ymin": 799
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1295,
+          "xmin": 1187,
+          "ymax": 1026,
+          "ymin": 836
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 663,
+          "xmin": 551,
+          "ymax": 760,
+          "ymin": 573
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1123,
+          "xmin": 1026,
+          "ymax": 298,
+          "ymin": 134
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1074,
+          "xmin": 977,
+          "ymax": 245,
+          "ymin": 92
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 938,
+          "xmin": 826,
+          "ymax": 226,
+          "ymin": 59
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 835,
+          "xmin": 749,
+          "ymax": 239,
+          "ymin": 85
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 763,
+          "xmin": 615,
+          "ymax": 220,
+          "ymin": 45
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 665,
+          "xmin": 546,
+          "ymax": 393,
+          "ymin": 245
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 357,
+          "xmin": 210,
+          "ymax": 412,
+          "ymin": 265
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 221,
+          "xmin": 81,
+          "ymax": 404,
+          "ymin": 245
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 342,
+          "xmin": 240,
+          "ymax": 271,
+          "ymin": 85
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 495,
+          "xmin": 299,
+          "ymax": 574,
+          "ymin": 468
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 312,
+          "xmin": 131,
+          "ymax": 670,
+          "ymin": 570
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 299,
+          "xmin": 92,
+          "ymax": 770,
+          "ymin": 679
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1307,
+          "xmin": 1207,
+          "ymax": 621,
+          "ymin": 460
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1340,
+          "xmin": 1152,
+          "ymax": 438,
+          "ymin": 370
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1081,
+          "xmin": 946,
+          "ymax": 456,
+          "ymin": 324
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 882,
+          "xmin": 807,
+          "ymax": 449,
+          "ymin": 296
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 859,
+          "xmin": 688,
+          "ymax": 613,
+          "ymin": 543
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 932,
+          "xmin": 859,
+          "ymax": 724,
+          "ymin": 538
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1160,
+          "xmin": 1032,
+          "ymax": 731,
+          "ymin": 570
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1320,
+          "xmin": 1238,
+          "ymax": 837,
+          "ymin": 693
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1079,
+          "xmin": 988,
+          "ymax": 957,
+          "ymin": 812
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 996,
+          "xmin": 849,
+          "ymax": 957,
+          "ymin": 842
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1063,
+          "xmin": 862,
+          "ymax": 812,
+          "ymin": 726
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "38_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 718,
+          "xmin": 610,
+          "ymax": 680,
+          "ymin": 447
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1288,
+          "xmin": 1204,
+          "ymax": 836,
+          "ymin": 592
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 615,
+          "xmin": 474,
+          "ymax": 945,
+          "ymin": 729
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1126,
+          "xmin": 988,
+          "ymax": 957,
+          "ymin": 727
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1218,
+          "xmin": 1124,
+          "ymax": 793,
+          "ymin": 565
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 951,
+          "xmin": 790,
+          "ymax": 802,
+          "ymin": 615
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 849,
+          "xmin": 712,
+          "ymax": 653,
+          "ymin": 438
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 960,
+          "xmin": 857,
+          "ymax": 587,
+          "ymin": 339
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1290,
+          "xmin": 1213,
+          "ymax": 559,
+          "ymin": 332
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1374,
+          "xmin": 1262,
+          "ymax": 620,
+          "ymin": 409
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1220,
+          "xmin": 1073,
+          "ymax": 570,
+          "ymin": 348
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1187,
+          "xmin": 1038,
+          "ymax": 270,
+          "ymin": 57
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1351,
+          "xmin": 1201,
+          "ymax": 295,
+          "ymin": 60
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "14_bees.jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  },
+  {
+    "annotations": [
+      {
+        "bbox": {
+          "xmax": 1080,
+          "xmin": 997,
+          "ymax": 1029,
+          "ymin": 895
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 200,
+          "xmin": 65,
+          "ymax": 1019,
+          "ymin": 931
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 571,
+          "xmin": 442,
+          "ymax": 1030,
+          "ymin": 936
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 770,
+          "xmin": 626,
+          "ymax": 964,
+          "ymin": 896
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 925,
+          "xmin": 812,
+          "ymax": 960,
+          "ymin": 840
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 163,
+          "xmin": 10,
+          "ymax": 914,
+          "ymin": 846
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 197,
+          "xmin": 31,
+          "ymax": 870,
+          "ymin": 735
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 975,
+          "xmin": 858,
+          "ymax": 850,
+          "ymin": 743
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 832,
+          "xmin": 719,
+          "ymax": 822,
+          "ymin": 705
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 713,
+          "xmin": 583,
+          "ymax": 932,
+          "ymin": 843
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 344,
+          "xmin": 212,
+          "ymax": 899,
+          "ymin": 816
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 548,
+          "xmin": 385,
+          "ymax": 881,
+          "ymin": 802
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 695,
+          "xmin": 555,
+          "ymax": 754,
+          "ymin": 676
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 476,
+          "xmin": 315,
+          "ymax": 810,
+          "ymin": 735
+        },
+        "classes": [
+          "Bee"
+        ]
+      },
+      {
+        "bbox": {
+          "xmax": 1132,
+          "xmin": 956,
+          "ymax": 526,
+          "ymin": 448
+        },
+        "classes": [
+          "Bee"
+        ]
+      }
+    ],
+    "file_name": "15_bees (blured af).jpg",
+    "height": 1032,
+    "tags": [],
+    "task": "Object detection",
+    "width": 1376
+  }
+]

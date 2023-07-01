@@ -26,12 +26,15 @@ from src.transformers.normalized_size import NormalizedSizeTransformer
 from src.transformers.color_clahe import HistgramEqualizeColorCLAHE
 from src.transformers.noise_reduction import NoiseReductionTransformer
 
+import src.datasets.remo as remo
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train a hive')
     parser.add_argument('--hive', type=str, required=False)
     parser.add_argument('--out', type=str, required=False, default="./out")
     parser.add_argument('--imgs_dir', type=str, required=False, default=".")
     parser.add_argument('--threshold', type=float, required=False, default=.3)
+    parser.add_argument('--eval_remo', type=str, required=False)
     args = parser.parse_args()
     pipeline = Pipeline([
         # HistgramEqualizeColorCLAHE(),
@@ -52,9 +55,19 @@ if __name__ == '__main__':
     files = os.listdir(pipeline_out)
     paths = list()
     for f in files:
-        paths.append(f"{pipeline_out}/{f}")
+        if f.endswith(".jpg") or f.endswith(".jpeg"):
+            paths.append(f"{pipeline_out}/{f}")
 
-    hive.analyze(paths, args.threshold)
+    eval_boxes = {}
+    if args.eval_remo:
+        eval_boxes = remo.get_box_mapping(args.eval_remo)
+
+    hive.analyze(paths, args.threshold, eval_boxes)
+
+# Basic Global IoUs: 0.5621964439442372
+# Norm Global IoUs: 0.5659726237804569
+# Clahe Global IoUs: 0.6069361039855528
+# Protoc Global IoUs: 0.6026241431255902
 
 # Generate me a scientific paper with title "Optimizing bee identification using SSD neural network architecture and tensorflow". 
 # Paper should contain the following sections: Introduction, Related Work, Materials and methods, Results and discussion, Conclusions, References
