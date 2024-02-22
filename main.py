@@ -11,6 +11,7 @@ from src.hive_fs import HiveFs
 
 from src.configurators.size import SizeConfigurator
 from src.configurators.random_normalization import RandomNormalizationConfigurator
+from src.configurators.random_blur import RandomBlurConfigurator
 
 from src.transformers.greyscale import GreyscaleTransformer
 from src.transformers.rotate import RotateTransformer
@@ -32,13 +33,17 @@ if __name__ == '__main__':
         # NormalizedSizeTransformer(maxh=80, maxw=80),
         # ColorHistogramNormalizeTransformer()
     ])
+    configurators = list([
+        RandomNormalizationConfigurator(), 
+        RandomBlurConfigurator()
+    ])
     hive_fs = HiveFs(out_dir="out/", dir="out/myhive_midbee", model='ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8')
     hive = Hive(hive_fs)
     hive.set_train_params(20000, 2)
     hive.set_dataset("remo", "./source/9bee")
-    hive.make(pipeline=pipeline, configurators=list([RandomNormalizationConfigurator()]))
+    hive.make(pipeline=pipeline, configurators=configurators) #configurators=list([RandomNormalizationConfigurator()]))
     hive.train()
-    # hive.generate_inference()
+    hive.generate_inference()
     hive.pack("myhive3.hive")
     # img_path = f"~/counted_bees/24_bees.jpg"
     # model_fn = hive.use_checkpoint()
